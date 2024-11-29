@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="./sytle.css" />
 	</head>
 	<body>
-		<!-- This is Header Section -->
+		<!-- This is Navbar Section -->
 		<div class="navbar bg-base-100 my-2">
 			<div class="navbar-start">
 				<!-- <div class="dropdown">
@@ -201,7 +201,7 @@
 			<div
 				class="flex flex-col bg-black bg-opacity-50 w-full h-[70vh] text-white text-center items-center justify-center"
 			>
-				<h1 class="text-5xl font-semibold">We bring robots to life.</h1>
+				<h1 class="font-semibold">We bring robots to life.</h1>
 				<p class="text-xl mt-8">
 					Hanson Robotics is an AI and robotics company dedicated to
 					creating socially intelligent machines that enrich <br />
@@ -210,42 +210,57 @@
 			</div>
 		</div>
 
-        <!-- Why human-like robots section -->
-        
-
+		<!-- Why human-like robots section -->
+		<div class="justify-center text-center mt-20">
+			<h2 class="text-5xl mb-8">Why human-like robots?</h2>
+			<p>
+				Robots will soon be everywhere. How can we nurture them to be
+				our friends and useful collaborators? Robots with <br />
+				good aesthetic design, rich personalities, and social cognitive
+				intelligence can potentially connect deeply and <br />
+				meaningfully with humans.
+			</p>
+			<button class="btn text-white bg-black rounded-full px-10 mt-10">
+				OUR ROBOTS
+			</button>
+		</div>
 		<!-- Footer Section -->
-		<footer class="footer bg-base-200 text-base-content p-10">
-			<nav>
-				<h6 class="footer-title">RESOURCES</h6>
-				<a class="link link-hover">PRESS</a>
-				<a class="link link-hover">FAQS</a>
-				<a class="link link-hover">JOBS</a>
-			</nav>
-			<nav>
-				<h6 class="footer-title">Company</h6>
-				<a class="link link-hover">TERMS OF USE</a>
-				<a class="link link-hover">PRIVACY POLICY</a>
-				<a class="link link-hover">BLOG</a>
-				<a class="link link-hover">SITEMAP</a>
-			</nav>
-			<form>
-				<h6 class="footer-title">Newsletter</h6>
-				<div>
+		<footer class="footer bg-black p-10">
+			<div
+				class="flex w-3/4 justify-between text-base-content mx-auto text-white"
+			>
+				<nav>
+					<h6 class="footer-title">RESOURCES</h6>
+					<p><a class="link link-hover">PRESS</a></p>
+					<p><a class="link link-hover">FAQS</a></p>
+					<p><a class="link link-hover">JOBS</a></p>
+				</nav>
+				<nav>
+					<h6 class="footer-title">Company</h6>
+					<p><a class="link link-hover">TERMS OF USE</a></p>
+					<p><a class="link link-hover">PRIVACY POLICY</a></p>
+					<p><a class="link link-hover">BLOG</a></p>
+					<p><a class="link link-hover">SITEMAP</a></p>
+				</nav>
+				<form>
+					<h6 class="footer-title">Newsletter</h6>
 					<div>
-						<input
-							type="text"
-							name="email"
-							placeholder="your email address"
-							class="bordered rounded-full px-16 py-4"
-						/>
+						<div>
+							<input
+								type="text"
+								name="email"
+								placeholder="your email address"
+								class="rounded-full p-4 w-full lg:min-w-96"
+							/>
+						</div>
+						<button
+							class="btn bg-red-700 text-white px-6 rounded-full mt-4"
+						>
+							Subscribe
+						</button>
 					</div>
-					<button
-						class="btn bg-red-700 text-white px-6 rounded-full mt-4"
-					>
-						Subscribe
-					</button>
-				</div>
-			</form>
+				</form>
+			</div>
 		</footer>
 
 		<!-- Script -->
