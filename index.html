@@ -22,49 +22,17 @@
 	</head>
 	<body>
 		<!-- This is Navbar Section -->
-		<div class="navbar bg-base-100 my-2">
+		<div class="navbar bg-base-100 my-2 fixed -top-4 px-16">
 			<div class="navbar-start">
-				<!-- <div class="dropdown">
-					<div
-						tabindex="0"
-						role="button"
-						class="btn btn-ghost lg:hidden"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="h-5 w-5"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M4 6h16M4 12h8m-8 6h16"
-							/>
-						</svg>
-					</div>
-					<ul
-						tabindex="0"
-						class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-					>
-						<li><a>Item 1</a></li>
-						<li>
-							<a>Parent</a>
-							<ul class="p-2">
-								<li><a>Submenu 1</a></li>
-								<li><a>Submenu 2</a></li>
-							</ul>
-						</li>
-						<li><a>Item 3</a></li>
-					</ul>
-				</div> -->
-				<button class="btn" href="#">
-					<img class="h-8" src="/assets/logo.png" alt="" />
-				</button>
+				<a href="#">
+					<img
+						class="h-8"
+						src="./assets/hanson-logo-removebg-preview.png"
+						alt=""
+					/>
+				</a>
 			</div>
-			<div class="navbar-end hidden lg:flex">
+			<div class="navbar-center hidden lg:flex">
 				<ul class="menu menu-horizontal px-1">
 					<ul class="list-none">
 						<li class="relative group">
@@ -76,26 +44,26 @@
 
 							<!-- Dropdown Content -->
 							<ul
-								class="absolute top-10 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
 							>
 								<li>
 									<a
 										href="#"
-										class="block px-4 py-2 hover:bg-gray-100"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
 										>LEADERSHIP</a
 									>
 								</li>
 								<li>
 									<a
 										href="#"
-										class="block px-4 py-2 hover:bg-gray-100"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
 										>AWARDS</a
 									>
 								</li>
 								<li>
 									<a
 										href="#"
-										class="block px-4 py-2 hover:bg-gray-100"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
 										>MEET THE TEAM</a
 									>
 								</li>
@@ -105,6 +73,7 @@
 					<ul class="list-none">
 						<li class="relative group">
 							<!-- Menu Summary -->
+
 							<span
 								class="cursor-pointer font-semibold px-4 py-2 block"
 								>ROBOTS</span
@@ -112,33 +81,59 @@
 
 							<!-- Dropdown Content -->
 							<ul
-								class="absolute top-10 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg group-hover:block p-0"
 							>
-								<li>
-									<a
-										href="#"
-										class="block px-4 py-2 hover:bg-gray-100"
-										>SOPHIA</a
+								<div class="dropdown dropdown-right p-0">
+									<li>
+										<a
+											tabindex="0"
+											href="#"
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+											>SOPHIA
+											<i
+												class="fa-solid fa-caret-right"
+											></i
+										></a>
+									</li>
+									<ul
+										tabindex="0"
+										class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ml-12"
 									>
-								</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											BEING SOPHIA
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											ART BY SOPHIA THE ROBOT
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											SOPHIA 2020
+										</li>
+									</ul>
+								</div>
 								<li>
 									<a
 										href="#"
-										class="block px-4 py-2 hover:bg-gray-100"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
 										>LITTLE SOPHIA</a
 									>
 								</li>
 								<li>
 									<a
 										href="#"
-										class="block px-4 py-2 hover:bg-gray-100"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
 										>ALL ROBOTS</a
 									>
 								</li>
 							</ul>
 						</li>
 					</ul>
-					<ul class="list-none">
+					<ul class="ltext-red-700">
 						<li class="relative group">
 							<!-- Menu Summary -->
 							<span
@@ -148,19 +143,19 @@
 
 							<!-- Dropdown Content -->
 							<ul
-								class="absolute top-10 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
 							>
 								<li>
 									<a
 										href="#"
-										class="block px-4 py-2 hover:bg-gray-100"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
 										>HUMANIZING AI</a
 									>
 								</li>
 								<li>
 									<a
 										href="#"
-										class="block px-4 py-2 hover:bg-gray-100"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
 										>RESEARCH</a
 									>
 								</li>
@@ -177,19 +172,19 @@
 
 							<!-- Dropdown Content -->
 							<ul
-								class="absolute top-10 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
 							>
 								<li>
 									<a
 										href="#"
-										class="block px-4 py-2 hover:bg-gray-100"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
 										>BLOG</a
 									>
 								</li>
 								<li>
 									<a
 										href="#"
-										class="block px-4 py-2 hover:bg-gray-100"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
 										>NEWS</a
 									>
 								</li>
@@ -199,10 +194,15 @@
 					<li><a class="font-semibold">CONTACT</a></li>
 				</ul>
 			</div>
+			<div class="navbar-end flex gap-8">
+				<i class="fa-brands fa-facebook-f"></i>
+				<i class="fa-brands fa-linkedin-in"></i>
+				<i class="fa-brands fa-twitter"></i>
+			</div>
 		</div>
 
 		<!-- This is Banner Section -->
-		<div class="header-bg min-h-[70vh]">
+		<div class="header-bg min-h-[70vh] mt-16">
 			<div
 				class="flex flex-col bg-black bg-opacity-50 w-full h-[70vh] text-white text-center items-center justify-center"
 			>
@@ -612,7 +612,7 @@
 
 		<!-- Swiper Slider -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-		<!-- font awesome -->
+		<!-- font Awesome -->
 		<script
 			src="https://kit.fontawesome.com/1f51f513e9.js"
 			crossorigin="anonymous"
