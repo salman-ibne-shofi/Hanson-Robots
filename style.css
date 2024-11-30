@@ -1,0 +1,28 @@
+body,
+html {
+	overflow-x: hidden;
+}
+
+.header-bg {
+	background-image: url(./assets/banner.jpg);
+	background-position: center;
+}
+
+.swiper-pagination-bullet {
+	background-color: #ccc; /* Default color of the dots */
+	opacity: 1; /* Ensure the dots are fully visible */
+	transition: background-color 0.3s ease; /* Smooth color change */
+}
+
+.swiper-pagination-bullet-active {
+	background-color: orangered; /* Color for the active dot */
+}
+
+.swiper-brands-wrapper {
+	overflow: hidden;
+	width: 1100px;
+}
+
+.custom-icon {
+	font-size: 24px; /* Adjust size as needed */
+}
