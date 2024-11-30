@@ -1,11 +1,502 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awards</title>
-</head>
-<body>
-    
-</body>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Awards</title>
+		<!-- Import TailwindCss -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Import DaisyUI -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<!-- Swiper Slider -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body class="texture-bg">
+		<!-- This is Navbar Section -->
+		<div class="navbar shadow-md fixed top-0 px-16 z-50 bg-white">
+			<div class="navbar-start">
+				<a href="../index.html">
+					<img
+						class="h-8"
+						src="../assets/hanson-logo-removebg-preview.png"
+						alt=""
+					/>
+				</a>
+			</div>
+			<div class="navbar-center hidden lg:flex">
+				<ul class="menu menu-horizontal px-1">
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ABOUT</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="./leadership.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>LEADERSHIP</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>AWARDS</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>MEET THE TEAM</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ROBOTS</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg group-hover:block p-0"
+							>
+								<div class="dropdown dropdown-right p-0">
+									<li>
+										<a
+											tabindex="0"
+											href="#"
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+											>SOPHIA
+											<i
+												class="fa-solid fa-caret-right"
+											></i
+										></a>
+									</li>
+									<ul
+										tabindex="0"
+										class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ml-12"
+									>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											BEING SOPHIA
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											ART BY SOPHIA THE ROBOT
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											SOPHIA 2020
+										</li>
+									</ul>
+								</div>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>LITTLE SOPHIA</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>ALL ROBOTS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="ltext-red-700">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>HANSON AI</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>HUMANIZING AI</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>RESEARCH</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>RESOURCES</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>BLOG</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>NEWS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<li><a class="font-semibold">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="navbar-end flex gap-8">
+				<i class="fa-brands fa-facebook-f"></i>
+				<i class="fa-brands fa-linkedin-in"></i>
+				<i class="fa-brands fa-twitter"></i>
+			</div>
+		</div>
+		<!-- Awards Section -->
+		<div class="mt-24 text-center mb-16">
+			<h1
+				class="text-5xl text-black border-b-2 border-black inline-block pb-10 mb-12"
+			>
+				Awards
+			</h1>
+			<div class="flex flex-col gap-4">
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>Belt and Road Technology Ambassdor Award</a
+					>
+				</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>2018 China New Economy Award</a
+					>
+				</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>Edison Award for Innovation</a
+					>
+				</p>
+				<p class="text-gray-400">Gold, Robotics Category, 2018</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>United Nations Development Programme
+					</a>
+				</p>
+				<p class="text-gray-400">Sophia: Innovation Champion 2017</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>IBM Watson AI X-Prize</a
+					>
+				</p>
+				<p class="text-gray-400">Hanson Robotics</p>
+				<p class="text-gray-400">Finalist, 2017</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>Disney Accelerator</a
+					>
+				</p>
+				<p class="text-gray-400">Venture Award</p>
+				<p class="text-gray-400">Hanson Robotics: Class of 2016</p>
+				<p><a href="">StartMeUp HK</a></p>
+				<p class="text-gray-400">First Place, IT Category: 2016</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>Global Annual Achievement Awards for AI</a
+					>
+				</p>
+				<p class="text-gray-400">Best Use of AI In Robotics</p>
+				<p class="text-gray-400">First Place: 2015</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>Software & Information Industry Association</a
+					>
+				</p>
+				<p class="text-gray-400">Grant</p>
+				<p class="text-gray-400">
+					Hanson RoboKind: Robots4Autism, 2014
+				</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>World Technology Network Award</a
+					>
+				</p>
+				<p class="text-gray-400">First Place, IT Category: 2013</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>Software & Information Industry Association</a
+					>
+				</p>
+				<p class="text-gray-400">Top Innovator</p>
+				<p class="text-gray-400">
+					Hanson RoboKind, Robots4Autism, 2013
+				</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>Hong Kong Innovation in Technology Fund (ITF) Award</a
+					>
+				</p>
+				<p class="text-gray-400">
+					Intelligent Character Consumer Robots: 2013
+				</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>National Science Foundation SBIR Grant</a
+					>
+				</p>
+				<p class="text-gray-400">
+					David Hanson/Kino Coursey/Hanson Robokind: 2012
+				</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>DARPA Robotics Challenge Grant Texas Medical Research
+						Collaborative (TXMRC) Grant</a
+					>
+				</p>
+				<p class="text-gray-400">David Hanson/Dan Popa, UTARI: 2012</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>Air Force Research Labs</a
+					>
+				</p>
+				<p class="text-gray-400">(AFRL) Award</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>Humanlike Articulate Robotic Headform to Replace Human
+						Volunteers in Respirator Fit Testing</a
+					>
+				</p>
+				<p class="text-gray-400">2011-2013</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>European INDIGO Consortium of Cognitive Robotics
+						Grant</a
+					>
+				</p>
+				<p class="text-gray-400">2006-2011</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>Tech Titans: Innovator of the Year</a
+					>
+				</p>
+				<p class="text-gray-400">David Hanson, 2007</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href=""
+						>Texas State Emerging Technology Award</a
+					>
+				</p>
+				<p class="text-gray-400">David Hanson: 2007-2011</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>Cooper-Hewitt Smithsonian Best Design Triennial</a
+					>
+				</p>
+				<p class="text-gray-400">David Hanson: 2006</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>Association for the Advancement of Artificial
+						Intelligence</a
+					>
+				</p>
+				<p>
+					<a
+						class="hover:text-red-700 text-zinc-600 font-medium"
+						href="#"
+						>Open Interaction Award</a
+					>
+				</p>
+				<p class="text-gray-400">
+					First Place: Evolution Robotics Prize, 2005
+				</p>
+				<p class="text-gray-400">World Technology Award</p>
+				<p class="text-gray-400">
+					Semifinalist: Best IT Hardware, 2004
+				</p>
+			</div>
+		</div>
+
+		<!-- Footer Section -->
+		<footer
+			class="footer bg-gray-900 p-10 flex flex-col items-center gap-16"
+		>
+			<div
+				class="flex w-5/6 justify-between text-base-content mx-auto text-gray-400 font-medium"
+			>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						RESOURCES
+					</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>PRESS</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>FAQS</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 text-xs"
+								>JOBS</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">Company</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>TERMS OF USE</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>PRIVACY POLICY</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>BLOG</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>SITEMAP</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<form>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						Newsletter
+					</h6>
+					<div>
+						<div>
+							<input
+								type="text"
+								name="email"
+								placeholder="your email address"
+								class="rounded-full p-2 w-full lg:min-w-64 text-xs font-light"
+							/>
+						</div>
+						<button
+							class="bg-red-700 text-white px-6 py-2 rounded-full mt-6 border-none"
+						>
+							Subscribe
+						</button>
+					</div>
+				</form>
+			</div>
+			<p class="text-white flex text-xs">
+				<span>Copyright &copy; 2024.</span>
+				<a href="" class="text-gray-300 hover:text-white"
+					>Hanson Robotics Ltd.</a
+				>
+			</p>
+		</footer>
+
+		<!-- font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/1f51f513e9.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Script -->
+		<script src="../script.js"></script>
+	</body>
 </html>
