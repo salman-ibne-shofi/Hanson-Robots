@@ -4,6 +4,634 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Meet the Team</title>
+		<!-- Import TailwindCss -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Import DaisyUI -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="../style.css" />
 	</head>
-	<body></body>
+	<body>
+		<!-- This is Navbar Section -->
+		<div class="navbar shadow-md fixed top-0 px-16 z-50 bg-white">
+			<div class="navbar-start">
+				<a href="../index.html">
+					<img
+						class="h-8"
+						src="../assets/hanson-logo-removebg-preview.png"
+						alt=""
+					/>
+				</a>
+			</div>
+			<div class="navbar-center hidden lg:flex">
+				<ul class="menu menu-horizontal px-1">
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ABOUT</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="./leadership.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>LEADERSHIP</a
+									>
+								</li>
+								<li>
+									<a
+										href="./awards.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>AWARDS</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>MEET THE TEAM</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ROBOTS</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg group-hover:block p-0"
+							>
+								<div class="dropdown dropdown-right p-0">
+									<li>
+										<a
+											tabindex="0"
+											href="#"
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+											>SOPHIA
+											<i
+												class="fa-solid fa-caret-right"
+											></i
+										></a>
+									</li>
+									<ul
+										tabindex="0"
+										class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ml-12"
+									>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											BEING SOPHIA
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											ART BY SOPHIA THE ROBOT
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											SOPHIA 2020
+										</li>
+									</ul>
+								</div>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>LITTLE SOPHIA</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>ALL ROBOTS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="ltext-red-700">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>HANSON AI</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>HUMANIZING AI</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>RESEARCH</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>RESOURCES</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>BLOG</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>NEWS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<li><a class="font-semibold">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="navbar-end flex gap-8">
+				<i class="fa-brands fa-facebook-f"></i>
+				<i class="fa-brands fa-linkedin-in"></i>
+				<i class="fa-brands fa-twitter"></i>
+			</div>
+		</div>
+
+		<!-- Meet The Team Member Section -->
+		<div class="flex flex-col gap-4 mt-32">
+			<!-- section-1 -->
+			<div class="flex justify-center gap-4 w-3/4 mx-auto">
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/DavidHanson.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/sophia.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/littlesophia-350x500-BW.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+			</div>
+			<!-- section-2 -->
+			<div class="flex justify-center gap-4 w-3/4 mx-auto">
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/mengna2.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/vytas1.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/Jovanka-v-Wilsdorf-PAGE-ONE-1-2.jpeg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+			</div>
+			<!-- section-3 -->
+			<div class="flex justify-center gap-4 w-3/4 mx-auto">
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/Ivan-Lee-1.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/lady1.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/Gerardo1.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+			</div>
+			<!-- section-4 -->
+			<div class="flex justify-center gap-4 w-3/4 mx-auto">
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/greg2.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/wenwei3.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/doris2.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+			</div>
+			<!-- section-5 -->
+			<div class="flex justify-center gap-4 w-3/4 mx-auto">
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/Ivan-Lee-1.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/Manav_Tidhan.jpeg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/matthew2.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+			</div>
+			<!-- section-6 -->
+			<div class="flex justify-center gap-4 w-3/4 mx-auto">
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/IMG_7928-scaled.jpeg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/kath_1.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/ayers-1.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+			</div>
+			<!-- section-7 -->
+			<div class="flex justify-center gap-4 w-3/4 mx-auto">
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/S-Siskind-1.png"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/Amy-Lee-1_350x500-1.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/kathleen.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+			</div>
+			<!-- section-8 -->
+			<div class="flex justify-center gap-4 w-3/4 mx-auto">
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/frank.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/Jessica-1.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+				<a href=""
+					><div class="img-area">
+						<img
+							class="w-60 h-80 object-cover"
+							src="../assets/D-Glen-1-1.jpg"
+							alt=""
+						/>
+						<div class="img-text">
+							<h5>Web Developer</h5>
+							<p>hello</p>
+						</div>
+					</div></a
+				>
+			</div>
+		</div>
+
+		<!-- Footer Section -->
+		<footer
+			class="footer bg-gray-900 p-10 flex flex-col items-center gap-16"
+		>
+			<div
+				class="flex w-5/6 justify-between text-base-content mx-auto text-gray-400 font-medium"
+			>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						RESOURCES
+					</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>PRESS</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>FAQS</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 text-xs"
+								>JOBS</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">Company</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>TERMS OF USE</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>PRIVACY POLICY</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>BLOG</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>SITEMAP</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<form>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						Newsletter
+					</h6>
+					<div>
+						<div>
+							<input
+								type="text"
+								name="email"
+								placeholder="your email address"
+								class="rounded-full p-2 w-full lg:min-w-64 text-xs font-light"
+							/>
+						</div>
+						<button
+							class="bg-red-700 text-white px-6 py-2 rounded-full mt-6 border-none"
+						>
+							Subscribe
+						</button>
+					</div>
+				</form>
+			</div>
+			<p class="text-white flex text-xs">
+				<span>Copyright &copy; 2024.</span>
+				<a href="" class="text-gray-300 hover:text-white"
+					>Hanson Robotics Ltd.</a
+				>
+			</p>
+		</footer>
+
+		<!-- font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/1f51f513e9.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Script -->
+		<script src="../script.js"></script>
+	</body>
 </html>
