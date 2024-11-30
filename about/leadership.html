@@ -1,11 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leadership</title>
-</head>
-<body>
-    
-</body>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Leadership</title>
+		<!-- Import TailwindCss -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Import DaisyUI -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<!-- Swiper Slider -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body class="bg-base-200">
+		<!-- This is Navbar Section -->
+		<div class="navbar shadow-md fixed top-0 px-16 z-50 bg-white">
+			<div class="navbar-start">
+				<a href="../index.html">
+					<img
+						class="h-8"
+						src="../assets/hanson-logo-removebg-preview.png"
+						alt=""
+					/>
+				</a>
+			</div>
+			<div class="navbar-center hidden lg:flex">
+				<ul class="menu menu-horizontal px-1">
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ABOUT</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="./about/leadership.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>LEADERSHIP</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>AWARDS</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>MEET THE TEAM</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ROBOTS</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg group-hover:block p-0"
+							>
+								<div class="dropdown dropdown-right p-0">
+									<li>
+										<a
+											tabindex="0"
+											href="#"
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+											>SOPHIA
+											<i
+												class="fa-solid fa-caret-right"
+											></i
+										></a>
+									</li>
+									<ul
+										tabindex="0"
+										class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ml-12"
+									>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											BEING SOPHIA
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											ART BY SOPHIA THE ROBOT
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											SOPHIA 2020
+										</li>
+									</ul>
+								</div>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>LITTLE SOPHIA</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>ALL ROBOTS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="ltext-red-700">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>HANSON AI</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>HUMANIZING AI</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>RESEARCH</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>RESOURCES</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>BLOG</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>NEWS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<li><a class="font-semibold">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="navbar-end flex gap-8">
+				<i class="fa-brands fa-facebook-f"></i>
+				<i class="fa-brands fa-linkedin-in"></i>
+				<i class="fa-brands fa-twitter"></i>
+			</div>
+		</div>
+		<!-- Title Section -->
+		<h1
+			class="text-4xl font-bold justify-center items-center text-center mt-32 mb-16"
+		>
+			Leadership
+		</h1>
+
+		<!-- Leadership Card Section -->
+		<div
+			class="card card-side shadow-xl rounded-none w-3/4 mx-auto hover:shadow-6xl"
+		>
+			<figure class="w-1/3">
+				<img src="../assets/d.jpg" alt="" class="w-full h-full" />
+			</figure>
+			<div class="card-body w-2/3 p-16 bg-white">
+				<h2 class="card-title text-3xl">
+					<a href="" class="hover:text-red-700 text-gray-600"
+						>David Hanson</a
+					>, Ph.D.
+				</h2>
+				<span>CEO, Founder</span>
+				<p class="text-gray-400">
+					David Hanson develops robots that are widely regarded as the
+					world’s most human-like in appearance, in a lifelong quest
+					to create true living, caring machines. To accomplish these
+					goals, Hanson integrates figurative arts with cognitive
+					science and robotics engineering, inventions novel skin
+					materials, facial expression mechanisms, and collaborative
+					developments in AI, within humanoid artworks like Sophia the
+					robot, which can engage people in naturalistic face-to-face
+					conversations and currently serve in AI research, education,
+					therapy, and other uses.
+				</p>
+				<div class="card-actions">
+					<a
+						class="no-underline hover:underline hover:text-red-700 font-semibold transition-all transition-100"
+						href="#"
+						>Read More</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<button
+			class="btn rounded-full flex mx-auto my-12 text-gray-400 hover:text-white hover:bg-black shadow-xl px-6"
+		>
+			MEET THE TEAM
+		</button>
+
+		<!-- Footer Section -->
+		<footer class="footer bg-black p-10">
+			<div
+				class="flex w-3/4 justify-between text-base-content mx-auto text-gray-400 font-medium"
+			>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						RESOURCES
+					</h6>
+					<ul class="list-none">
+						<li class="w-64 border-b border-slate-400 mb-4">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-500 mb-4"
+								>PRESS</a
+							>
+						</li>
+						<li class="w-64 border-b border-slate-400 mb-4">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-500 mb-4"
+								>FAQS</a
+							>
+						</li>
+						<li class="w-64">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-500"
+								>JOBS</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">Company</h6>
+					<ul class="list-none">
+						<li class="w-64 border-b border-slate-400 mb-4">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-500 mb-4"
+								>TERMS OF USE</a
+							>
+						</li>
+						<li class="w-64 border-b border-slate-400 mb-4">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-500 mb-4"
+								>PRIVACY POLICY</a
+							>
+						</li>
+						<li class="w-64 border-b border-slate-400 mb-4">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-500 mb-4"
+								>BLOG</a
+							>
+						</li>
+						<li class="w-64">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-500"
+								>SITEMAP</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<form>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						Newsletter
+					</h6>
+					<div>
+						<div>
+							<input
+								type="text"
+								name="email"
+								placeholder="your email address"
+								class="rounded-full p-4 w-full lg:min-w-96"
+							/>
+						</div>
+						<button
+							class="bg-red-700 text-white px-6 py-2 rounded-full mt-6 border-none"
+						>
+							Subscribe
+						</button>
+					</div>
+				</form>
+			</div>
+		</footer>
+
+		<!-- font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/1f51f513e9.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Script -->
+		<script src="../script.js"></script>
+	</body>
 </html>
