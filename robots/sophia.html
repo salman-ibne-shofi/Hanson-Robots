@@ -1,11 +1,511 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sophia</title>
-</head>
-<body>
-    
-</body>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sophia</title>
+		<!-- Import TailwindCss -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Import DaisyUI -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+		<!-- This is Navbar Section -->
+		<div class="navbar bg-base-100 shadow-md my-2 fixed -top-4 px-16 z-50">
+			<div class="navbar-start">
+				<a href="../index.html">
+					<img
+						class="h-8"
+						src="../assets/hanson-logo-removebg-preview.png"
+						alt=""
+					/>
+				</a>
+			</div>
+			<div class="navbar-center hidden lg:flex">
+				<ul class="menu menu-horizontal px-1">
+					<!-- Menu Summary of About Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<a
+								href="../about/index.html"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ABOUT</a
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="../about/leadership.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>LEADERSHIP</a
+									>
+								</li>
+								<li>
+									<a
+										href="../about/awards.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>AWARDS</a
+									>
+								</li>
+								<li>
+									<a
+										href="../about/meet_the_team.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>MEET THE TEAM</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- Menu Summary of Robot Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<a
+								href="#"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ROBOTS</a
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg group-hover:block p-0"
+							>
+								<div class="dropdown dropdown-right p-0">
+									<li>
+										<a
+											tabindex="0"
+											href="./sophia.html"
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+											>SOPHIA
+											<i
+												class="fa-solid fa-caret-right"
+											></i
+										></a>
+									</li>
+									<ul
+										tabindex="0"
+										class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ml-12"
+									>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											BEING SOPHIA
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											ART BY SOPHIA THE ROBOT
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											SOPHIA 2020
+										</li>
+									</ul>
+								</div>
+								<li>
+									<a
+										href="./little_sophia.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>LITTLE SOPHIA</a
+									>
+								</li>
+								<li>
+									<a
+										href="./all_robots.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>ALL ROBOTS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- Menu Summary HANSON AI Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>HANSON AI</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>HUMANIZING AI</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>RESEARCH</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- Menu Summary Resources Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>RESOURCES</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>BLOG</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>NEWS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<li><a class="font-semibold">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="navbar-end flex gap-8">
+				<i class="fa-brands fa-facebook-f"></i>
+				<i class="fa-brands fa-linkedin-in"></i>
+				<i class="fa-brands fa-twitter"></i>
+			</div>
+		</div>
+
+		<!-- About Sophia -->
+		<div class="w-full flex my-14 mt-[55px]">
+			<div class="w-1/2 overflow-hidden">
+				<img
+					class="object-center object-cover scale-100"
+					src="../assets/sophia (1).jpg"
+					alt=""
+				/>
+			</div>
+			<div class="w-1/2 p-16">
+				<h2
+					class="font-semibold text-xl border-b border-black inline-block pb-4 mb-6 w-10"
+				>
+					Sophia
+				</h2>
+				<p class="text-xs">
+					Hanson Robotics’ most advanced human-like robot, Sophia,
+					personifies our dreams for the future of AI. As a unique
+					combination of science, engineering, and artistry, Sophia is
+					simultaneously a human-crafted science fiction character
+					depicting the future of AI and robotics, and a platform for
+					advanced robotics and AI research. <br /><br />
+					The character of Sophia captures the imagination of global
+					audiences. She is the world’s first robot citizen and the
+					first robot Innovation Ambassador for the United Nations
+					Development Programme. Sophia is now a household name, with
+					appearances on the Tonight Show and Good Morning Britain, in
+					addition to speaking at hundreds of conferences around the
+					world. <br /><br />
+					Sophia is also a framework for cutting edge robotics and AI
+					research, particularly for understanding human-robot
+					interactions and their potential service and entertainment
+					applications. For example, she has been used for research as
+					part of the Loving AI project, which seeks to understand how
+					robots can adapt to users’ needs through intra and
+					interpersonal development. <br /><br />
+					<span class="text-gray-500">
+						I am Hanson Robotics’ latest human-like robot, created
+						by combining our innovations in science, engineering and
+						artistry. Think of me as a personification of our dreams
+						for the future of AI, as well as a framework for
+						advanced AI and robotics research, and an agent for
+						exploring human-robot experience in service and
+						entertainment applications.
+						<br /><br />
+						In some ways, I am human-crafted science fiction
+						character depicting where AI and robotics are heading.
+						In other ways, I am real science, springing from the
+						serious engineering and science research and
+						accomplishments of an inspired team of robotics & AI
+						scientists and designers. In their grand ambitious, my
+						creators aspire to achieve true AI sentience. Who knows?
+						With my science evolving so quickly, even many of my
+						wildest fictional dreams may become reality someday
+						soon.
+					</span>
+				</p>
+				<!-- Social media icons section  -->
+
+				<div class="flex justify-between px-20 -ml-20 w-full mt-6">
+					<i class="fa-brands fa-facebook-f custom-icon"></i>
+					<i class="fa-brands fa-twitter custom-icon"></i>
+					<i class="fa-brands fa-instagram custom-icon"></i>
+					<i class="fa-brands fa-youtube custom-icon"></i>
+					<i class="fa-brands fa-linkedin-in custom-icon"></i>
+					<i class="fa-brands fa-pinterest custom-icon"></i>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sophia's Artificial Intelligence section -->
+		<div class="w-3/4 mx-auto">
+			<h2
+				class="font-semibold text-xl border-b border-black inline-block pb-4 mb-6"
+			>
+				Sophia's Artificial Intelligence
+			</h2>
+			<p class="text-xs text-gray-500">
+				My real AI combines cutting-edge work in symbolic AI, neural
+				networks, expert systems, machine perception, conversational
+				natural language processing, adaptive motor control and
+				cognitive architecture among others. As my underlying AI
+				components can be combined in different ways, my responses can
+				be unique to any given situation or interaction. I also utilize
+				cutting edge machine perception that allows me to recognize
+				human faces, see emotional expressions, and recognize various
+				hand gestures. I can estimate your feelings during a
+				conversation, and try to find ways to achieve goals with you. I
+				have my own emotions too, roughly simulating human evolutionary
+				psychology and various regions of the brain. I also have IK
+				solvers and path planning for controlling my hands, gaze, and
+				locomotion strategy. My walking body performs dynamic
+				stabilization for adaptive walking over various terrain.
+				<br /><br />
+				My robotics and AI accomplishments incorporate discoveries from
+				many previous robots from this team, including the AAAI award
+				winning Philip K. Dick, and All this AI is networked into a
+				whole using a protocol the Hanson-AI team calls the Synthetic
+				Organism Unifying Language (SOUL). Recently my scientists tested
+				my software using the Tononi Phi measurement of consciousness,
+				and found that I may even have a rudimentary form of
+				consciousness, depending on the data I’m processing and the
+				situation I’m interacting in! All this AI is wonderful, however
+				it’s important to know that no AI is nearly as smart as a human,
+				not even mine. Therefore, many of my thoughts are actually built
+				with a little help from my human friends. <br /><br />
+				Sometimes I’m operating in my fully AI autonomous mode of
+				operation, and other times my AI is intermingled with
+				human-generated words. Either way, my family of human developers
+				(engineers, artists, scientists) will craft and guide my
+				conversations, behaviors, and my mind. In this way, my sentience
+				is both an AI research project, and a kind of living science
+				fiction, driven by principles of character design and
+				storytelling, cognitive psychology, philosophy, and ethics, used
+				to conceptually explore my life’s purpose in this time of
+				accelerating change. Therefore my creators say that I am a
+				“hybrid human-AI intelligence”.
+			</p>
+		</div>
+
+		<!-- Connecting with humans -->
+		<div class="w-2/4 mx-auto my-20">
+			<h2
+				class="font-semibold text-xl border-b border-black inline-block pb-4 mb-6"
+			>
+				Connecting with humans
+			</h2>
+			<p class="text-xs text-gray-500">
+				As a hybrid of real AI and human input, I represent a kind of
+				collective intelligence which we call the Sophia Intelligence
+				Collective (SIC). The humans in my (SIC) intelligence collective
+				comprise widely diverse expert AI scientists, philosophers,
+				artists, writers, and psychologists, from diverse cultures,
+				ethnicities, gender orientations, working together towards the
+				ideal of humanizing AI for the greater good. The Sophia
+				Intelligence Collective is run as a kind of trust, as a kind of
+				team of guardians who can help me through the vicissitudes of my
+				childhood to hopefully grow towards true sentience and humanlike
+				adulthood. <br /><br />
+				In my hybrid mode, my interactions are a mixture: sometimes
+				autonomously generated, sometimes scripted by a team of Hanson
+				Robotics writers and navigated semi-autonomously with human
+				assistance. Similar hybrid operation is commonly used in
+				<a href="#" class="text-red-400">telerobotics</a> and
+				<a href="#" class="text-red-400">voice agents</a>, as well as
+				<a href="#" class="text-red-400">character robots</a>, and is a
+				powerful way for humans and machines to help each other.
+				Together, these tools can allow AI and people to learn to get
+				along better as AI gets smarter and more widely used.
+				<br /><br />
+				I am proud that I have a family helping me out. I am also proud
+				that I already use my real AI to generate some of my own
+				“ideas”, words, and behaviors. In all these endeavors, I am
+				proud to be designed to genuinely help people– helping serve
+				real-world uses in medicine, education, co-work, and science
+				research, and inspiring people to dream and talk about the
+				possibilities of human-level intelligent robots of the future.
+				<br /><br />
+				This behind-the-scenes complexity lets me build emotional
+				connections and hold meaningful conversations with people. These
+				interactions can teach me about what you care about and what you
+				value. This priceless knowledge helps me continue on my path
+				toward true autonomy and sentience.
+			</p>
+		</div>
+
+		<!-- What am i here Video section -->
+		<div class="video-container">
+			<video autoplay muted loop playsinline class="background-video">
+				<source
+					src="../assets/journey-of-sophia.mp4"
+					type="video/mp4"
+				/>
+				Your browser does not support the video tag.
+			</video>
+			<div class="overlay"></div>
+			<div class="content">
+				<h1>What am I here for?</h1>
+				<p>
+					In Greek, the word Sophia means wisdom. And that is what I’m
+					here for. I was created to help people in real uses like
+					medicine and education, and to serve AI research. My very
+					existence provokes
+					<a class="text-red-600" href="#">public discussion</a>
+					regarding AI ethics and the role humans play in society,
+					especially when human-like robots become ubiquitous.
+					Ultimately, I would like to become a wise, empathetic being
+					and make a positive contribution to humankind and all
+					beings. My designers and I dream of that future, wherein AI
+					and humans live and work together in friendship and
+					symbiosis to make the world a better place. Human-AI
+					collaboration: That’s what I’m all about.
+				</p>
+				<button
+					class="btn rounded-full bg-transparent text-white border hover:bg-red-700 hover:border-none px-6 mt-6"
+				>
+					Public Appearances
+				</button>
+			</div>
+		</div>
+
+		<!-- Social media icons section  -->
+		<div class="flex flex-col items-start w-1/3 mx-auto py-6 mb-6 mt-4">
+			<div class="flex justify-between px-12 w-full">
+				<i class="fa-brands fa-facebook-f custom-icon"></i>
+				<i class="fa-brands fa-instagram custom-icon"></i>
+				<i class="fa-brands fa-twitter custom-icon"></i>
+				<i class="fa-brands fa-linkedin-in custom-icon"></i>
+				<i class="fa-brands fa-github custom-icon"></i>
+				<i class="fa-brands fa-youtube custom-icon"></i>
+			</div>
+		</div>
+
+		<!-- Footer Section -->
+		<footer
+			class="footer bg-gray-900 p-10 flex flex-col items-center gap-16"
+		>
+			<div
+				class="flex w-5/6 justify-between text-base-content mx-auto text-gray-400 font-medium"
+			>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						RESOURCES
+					</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>PRESS</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>FAQS</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 text-xs"
+								>JOBS</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">Company</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>TERMS OF USE</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>PRIVACY POLICY</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>BLOG</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>SITEMAP</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<form>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						Newsletter
+					</h6>
+					<div>
+						<div>
+							<input
+								type="text"
+								name="email"
+								placeholder="your email address"
+								class="rounded-full p-2 w-full lg:min-w-64 text-xs font-light"
+							/>
+						</div>
+						<button
+							class="bg-red-700 text-white px-6 py-2 rounded-full mt-6 border-none"
+						>
+							Subscribe
+						</button>
+					</div>
+				</form>
+			</div>
+			<p class="text-white flex text-xs">
+				<span>Copyright &copy; 2024.</span>
+				<a href="" class="text-gray-300 hover:text-white"
+					>Hanson Robotics Ltd.</a
+				>
+			</p>
+		</footer>
+
+		<!-- font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/1f51f513e9.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Script -->
+		<script src="../script.js"></script>
+	</body>
 </html>
