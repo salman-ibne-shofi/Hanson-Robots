@@ -1,9 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>About</title>
+		<!-- Import TailwindCss -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Import DaisyUI -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<!-- Swiper Slider -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="../about/index.html" />
 	</head>
-	<body></body>
+	<body>
+		<!-- This is Navbar Section -->
+		<div class="navbar shadow-md bg-base-100 my-2 fixed -top-4 px-16 z-50">
+			<div class="navbar-start">
+				<a href="#">
+					<img
+						class="h-8"
+						src="../assets/hanson-logo-removebg-preview.png"
+						alt=""
+					/>
+				</a>
+			</div>
+			<div class="navbar-center hidden lg:flex">
+				<ul class="menu menu-horizontal px-1">
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<a
+								href="#"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ABOUT</a
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="./leadership.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>LEADERSHIP</a
+									>
+								</li>
+								<li>
+									<a
+										href="./awards.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>AWARDS</a
+									>
+								</li>
+								<li>
+									<a
+										href="./meet_the_team.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>MEET THE TEAM</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ROBOTS</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg group-hover:block p-0"
+							>
+								<div class="dropdown dropdown-right p-0">
+									<li>
+										<a
+											tabindex="0"
+											href="#"
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+											>SOPHIA
+											<i
+												class="fa-solid fa-caret-right"
+											></i
+										></a>
+									</li>
+									<ul
+										tabindex="0"
+										class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ml-12"
+									>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											BEING SOPHIA
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											ART BY SOPHIA THE ROBOT
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											SOPHIA 2020
+										</li>
+									</ul>
+								</div>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>LITTLE SOPHIA</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>ALL ROBOTS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="ltext-red-700">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>HANSON AI</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>HUMANIZING AI</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>RESEARCH</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<span
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>RESOURCES</span
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>BLOG</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>NEWS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<li><a class="font-semibold">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="navbar-end flex gap-8">
+				<i class="fa-brands fa-facebook-f"></i>
+				<i class="fa-brands fa-linkedin-in"></i>
+				<i class="fa-brands fa-twitter"></i>
+			</div>
+		</div>
+
+		<!-- Leadership Section -->
+		<div
+			class="card card-side shadow-none rounded-none w-3/4 mx-auto hover:shadow-6xl"
+		>
+			<figure class="w-1/3">
+				<img
+					src="../assets/backsophia.jpg"
+					alt=""
+					class="w-full h-full"
+				/>
+			</figure>
+			<div class="card-body w-2/3 p-16 py-20 bg-white">
+				<h2 class="card-title text-3xl">
+					Hanson Robotics is an AI and robotics company dedicated to
+					creating socially intelligent machines that enrich the
+					quality of our lives.
+				</h2>
+				<p class="text-gray-400">
+					Founded by David Hanson, Ph.D., the Hanson team has built a
+					worldwide reputation for creating robots that look and act
+					genuinely alive, including renowned robot character Sophia
+					the Robot. Our innovations in AI research and development,
+					robotics engineering, experiential design, storytelling and
+					material science bring robots to life as engaging
+					characters, useful products, and as evolving AI.
+				</p>
+				<div class="card-actions mt-6">
+					<a
+						class="rounded-full px-6 py-2 inline-block hover:bg-black hover:text-white text-gray-400 border uppercase text-xs"
+						href="./leadership.html"
+					>
+						Leadership
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer Section -->
+		<footer
+			class="footer bg-gray-900 p-10 flex flex-col items-center gap-16"
+		>
+			<div
+				class="flex w-5/6 justify-between text-base-content mx-auto text-gray-400 font-medium"
+			>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						RESOURCES
+					</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>PRESS</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>FAQS</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 text-xs"
+								>JOBS</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">Company</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>TERMS OF USE</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>PRIVACY POLICY</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>BLOG</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>SITEMAP</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<form>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						Newsletter
+					</h6>
+					<div>
+						<div>
+							<input
+								type="text"
+								name="email"
+								placeholder="your email address"
+								class="rounded-full p-2 w-full lg:min-w-64 text-xs font-light"
+							/>
+						</div>
+						<button
+							class="bg-red-700 text-white px-6 py-2 rounded-full mt-6 border-none"
+						>
+							Subscribe
+						</button>
+					</div>
+				</form>
+			</div>
+			<p class="text-white flex text-xs">
+				<span>Copyright &copy; 2024.</span>
+				<a href="" class="text-gray-300 hover:text-white"
+					>Hanson Robotics Ltd.</a
+				>
+			</p>
+		</footer>
+
+		<!-- Swiper Slider -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!-- font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/1f51f513e9.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Script -->
+		<script src="./index.html"></script>
+	</body>
 </html>
