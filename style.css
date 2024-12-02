@@ -6,6 +6,11 @@ html {
 	overflow-x: hidden;
 }
 
+/* Overwrite daisyUI card padding */
+.p-10{
+    padding: 2.5rem !important;
+}
+
 .header-bg {
 	background-image: url(./assets/banner.jpg);
 	background-position: center;
