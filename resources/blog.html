@@ -1,11 +1,1275 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
-</head>
-<body>
-    
-</body>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blogs</title>
+		<!-- Import TailwindCss -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Import DaisyUI -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+		<!-- This is Navbar Section -->
+		<div class="navbar shadow-md bg-base-100 my-2 fixed -top-4 px-16 z-50">
+			<div class="navbar-start">
+				<a href="../index.html">
+					<img
+						class="h-8"
+						src="../assets/hanson-logo-removebg-preview.png"
+						alt=""
+					/>
+				</a>
+			</div>
+			<div class="navbar-center hidden lg:flex">
+				<ul class="menu menu-horizontal px-1">
+					<!-- Menu Summary of About Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<a
+								href="../about/index.html"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ABOUT</a
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="../about/leadership.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>LEADERSHIP</a
+									>
+								</li>
+								<li>
+									<a
+										href="../about/awards.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>AWARDS</a
+									>
+								</li>
+								<li>
+									<a
+										href="../about/meet_the_team.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>MEET THE TEAM</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- Menu Summary of Robot Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<a
+								href="../robots/index.html"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ROBOTS</a
+							>
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg group-hover:block p-0"
+							>
+								<div class="dropdown dropdown-right p-0">
+									<li>
+										<a
+											tabindex="0"
+											href="../robots/sophia.html"
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+											>SOPHIA
+											<i
+												class="fa-solid fa-caret-right"
+											></i
+										></a>
+									</li>
+									<ul
+										tabindex="0"
+										class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ml-12"
+									>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											BEING SOPHIA
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											ART BY SOPHIA THE ROBOT
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											SOPHIA 2020
+										</li>
+									</ul>
+								</div>
+								<li>
+									<a
+										href="../robots/little_sophia.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>LITTLE SOPHIA</a
+									>
+								</li>
+								<li>
+									<a
+										href="../robots/index.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>ALL ROBOTS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- Menu Summary HANSON AI Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<a
+								href="../hanson_ai/index.html"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>HANSON AI</a
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="../hanson_ai/humanizing_ai.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>HUMANIZING AI</a
+									>
+								</li>
+								<li>
+									<a
+										href="../hanson_ai/research.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>RESEARCH</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- Menu Summary Resources Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<a
+								href="../resources/index.html"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>RESOURCES</a
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="../resources/blog.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>BLOG</a
+									>
+								</li>
+								<li>
+									<a
+										href="../resources/news.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>NEWS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<li><a class="font-semibold">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="navbar-end flex gap-8">
+				<i class="fa-brands fa-facebook-f"></i>
+				<i class="fa-brands fa-linkedin-in"></i>
+				<i class="fa-brands fa-twitter"></i>
+			</div>
+		</div>
+
+		<!-- Banner section -->
+		<a href="#" class=""
+			><div class="relative w-full h-[500px]">
+				<!-- Background Image -->
+				<img
+					src="../assets/Sophia_Collection.jpg"
+					alt=""
+					class="w-full h-full object-cover"
+				/>
+
+				<!-- Content Section -->
+				<div
+					class="absolute inset-0 hover:bg-black/60 bg-black/50 flex flex-col justify-center text-white px-64"
+				>
+					<h1 class="text-xl md:text-4xl font-bold mb-4 w-1/2">
+						Playasia and Hanson Robotics to Launch Merchandise Line
+					</h1>
+					<p class="mb-6 w-1/2">
+						The two Hong Kong based companies are collaborating on
+						lines of collectible and wearable merchandise featuring
+						SOPHIA, the world-famous robot. Hong Kong (7 October
+						2022) – Hanson Robotics Limited has partnered...
+					</p>
+				</div>
+			</div></a
+		>
+
+		<!-- Cards -->
+		<div class="bg-base-300 py-8">
+			<div class="grid grid-cols-2 w-3/4 mx-auto gap-6">
+				<!-- card 1 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/David-with-multiple-Sophias-2-285x300.png"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75 h-80"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 2 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/1_NOmGdicMgCx6gTfq4XvyEw-285x300.jpeg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75 h-80"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							The DAO of Sophia
+						</h2>
+						<p class="text-gray-600">
+							Co-written by David Hanson, Ben Goertzel, and David
+							Lake, with pivotal contributions to the text and
+							underlying concepts by Randy Boyer and David Orban.
+							SingularityNET CoFounders...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 3 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/4th-birthday-3-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							What Does Sophia the Robot and a Four-Year-Old Human
+							Have in Common (or Not)?
+						</h2>
+						<p class="text-gray-600">
+							Sophia just turned four years...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 4 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/jimmyfallonSophia-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							The Making of Sophia: Sophia’s Singing Voice
+						</h2>
+						<p class="text-gray-600">
+							On November 21st, 2018, Sophia the Robot of
+							Hanson...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 5 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/306A7065-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 6 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Sophia-2020-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 7 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/IMG-20191125-WA0014-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 8 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/brain.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75 h-80"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 9 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/2019-10-08_21-48-39-285x300.png"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 10 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Rolling-Base-285x300.png"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 11 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Wenwei-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 12 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/audience.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75 h-80"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 13 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/sophia_snapshot_robot-1-285x300.png"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 14 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Mengna-Lei-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 15 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Greg-Kochan-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 16 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Sophia-credit-card-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 17 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Brian-Lau-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 18 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Paul-Bridges-1-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 19 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/2019-07-08_8-14-31-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75 h-80"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 20 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/AdobeStock_262012552-285x300.jpeg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75 h-80"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 21 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Mario-Guzman-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 22 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/2019-06-18_22-42-15-285x300.png"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 23 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Amy-Lee-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 24 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/brain.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75 h-80"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 25 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Star-Ferry-Pier-1-285x300.jpeg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 26 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Charlotte-Poon-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 27 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Annotation-2019-04-16-170122-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 28 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/Annotation-2019-04-12-101223-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 29 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/jimmyfallonSophia-285x300.jpg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+				<!-- card 30 -->
+				<div
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+				>
+					<a class="hover:bg-black/50 w-1/2" href="#">
+						<figure class="relative group">
+							<img
+								src="../assets/AdobeStock_175781915-285x300.jpeg"
+								alt=""
+								title="Click to learn more about SophiaDAO!"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
+							/>
+						</figure>
+					</a>
+					<div class="card-body w-1/2">
+						<h2 class="card-title font-bold hover:text-red-700">
+							SophiaDAO: Governance Organization for AGI
+							Development
+						</h2>
+						<p class="text-gray-600">
+							Originally published by Alishba Imran, March 15,
+							2021. I’m...
+						</p>
+						<div class="text-red-700">
+							<a href="#" class="hover:text-black"
+								>David Hanson</a
+							>
+							<i class="fa-regular fa-calendar"></i> 2021-03-21
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Social media icons & join us section  -->
+		<div class="flex flex-col items-start w-1/3 mx-auto py-6 my-6">
+			<div class="flex justify-between px-12 w-full">
+				<i class="fa-brands fa-facebook-f custom-icon"></i>
+				<i class="fa-brands fa-instagram custom-icon"></i>
+				<i class="fa-brands fa-twitter custom-icon"></i>
+				<i class="fa-brands fa-linkedin-in custom-icon"></i>
+				<i class="fa-brands fa-github custom-icon"></i>
+				<i class="fa-brands fa-youtube custom-icon"></i>
+			</div>
+		</div>
+
+		<!-- Footer Section -->
+		<footer
+			class="footer bg-gray-900 p-10 flex flex-col items-center gap-16"
+		>
+			<div
+				class="flex w-5/6 justify-between text-base-content mx-auto text-gray-400 font-medium"
+			>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						RESOURCES
+					</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>PRESS</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>FAQS</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 text-xs"
+								>JOBS</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">Company</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>TERMS OF USE</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>PRIVACY POLICY</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>BLOG</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>SITEMAP</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<form>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						Newsletter
+					</h6>
+					<div>
+						<div>
+							<input
+								type="text"
+								name="email"
+								placeholder="your email address"
+								class="rounded-full p-2 w-full lg:min-w-64 text-xs font-light"
+							/>
+						</div>
+						<button
+							class="bg-red-700 text-white px-6 py-2 rounded-full mt-6 border-none"
+						>
+							Subscribe
+						</button>
+					</div>
+				</form>
+			</div>
+			<p class="text-white flex text-xs">
+				<span>Copyright &copy; 2024.</span>
+				<a href="" class="text-gray-300 hover:text-white"
+					>Hanson Robotics Ltd.</a
+				>
+			</p>
+		</footer>
+
+		<!-- font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/1f51f513e9.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Script -->
+		<script src="../script.js"></script>
+	</body>
 </html>
