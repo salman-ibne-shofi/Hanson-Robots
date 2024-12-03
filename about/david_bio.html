@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Contact Us</title>
+		<title>David Hanson - Hanson Robotics</title>
 		<!-- Import TailwindCss -->
 		<script src="https://cdn.tailwindcss.com"></script>
 		<!-- Import DaisyUI -->
@@ -17,7 +17,7 @@
 	</head>
 	<body>
 		<!-- This is Navbar Section -->
-		<div class="navbar shadow-md bg-base-100 my-2 fixed -top-4 px-16 z-50">
+		<div class="navbar shadow-md fixed top-0 px-16 z-50 bg-white">
 			<div class="navbar-start">
 				<a href="../index.html">
 					<img
@@ -33,9 +33,9 @@
 					<ul class="list-none">
 						<li class="relative group">
 							<a
-								href="../about/index.html"
+								href="./index.html"
 								class="cursor-pointer font-semibold px-4 py-2 block"
-								>ABOUT</a
+								>About</a
 							>
 
 							<!-- Dropdown Content -->
@@ -44,14 +44,14 @@
 							>
 								<li>
 									<a
-										href="../about/leadership.html"
+										href="#"
 										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
 										>LEADERSHIP</a
 									>
 								</li>
 								<li>
 									<a
-										href="../about/awards.html"
+										href="./awards.html"
 										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
 										>AWARDS</a
 									>
@@ -74,6 +74,7 @@
 								class="cursor-pointer font-semibold px-4 py-2 block"
 								>ROBOTS</a
 							>
+
 							<!-- Dropdown Content -->
 							<ul
 								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg group-hover:block p-0"
@@ -131,7 +132,6 @@
 					<!-- Menu Summary HANSON AI Section -->
 					<ul class="list-none">
 						<li class="relative group">
-							<!-- Menu Summary -->
 							<a
 								href="../hanson_ai/index.html"
 								class="cursor-pointer font-semibold px-4 py-2 block"
@@ -162,13 +162,11 @@
 					<!-- Menu Summary Resources Section -->
 					<ul class="list-none">
 						<li class="relative group">
-							<!-- Menu Summary -->
 							<a
 								href="../resources/index.html"
 								class="cursor-pointer font-semibold px-4 py-2 block"
 								>RESOURCES</a
 							>
-
 							<!-- Dropdown Content -->
 							<ul
 								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
@@ -190,7 +188,11 @@
 							</ul>
 						</li>
 					</ul>
-					<li><a href="#" class="font-semibold">CONTACT</a></li>
+					<li>
+						<a href="../contact_us/index.html" class="font-semibold"
+							>CONTACT</a
+						>
+					</li>
 				</ul>
 			</div>
 			<div class="navbar-end flex gap-8">
@@ -200,158 +202,53 @@
 			</div>
 		</div>
 
-		<!-- Contact Us form Section -->
-		<div class="bg-base-100 py-20">
-			<div class="w-full">
-				<div class="flex-col lg:flex-row-reverse">
-					<div class="text-center w-2/5 mx-auto">
-						<h1 class="text-4xl font-bold">Contact Us</h1>
-						<p class="py-6 text-gray-500">
-							Contact Us For Sophia event appearances (virtual or
-							live), sponsorship inquiries or questions about
-							research robot sales, press or careers, please
-							submit this form, or scroll down for direct email
-							contact information. Thank you!
-						</p>
-					</div>
-					<div class="w-2/5 mx-auto">
-						<form class="">
-							<div class="form-control">
-								<label class="label">
-									<span class="label-text">Name</span>
-								</label>
-								<input
-									type="text"
-									placeholder="Name"
-									class="input input-bordered rounded-full"
-									required
-								/>
-							</div>
-							<div class="form-control">
-								<label class="label">
-									<span class="label-text">Email</span>
-								</label>
-								<input
-									type="email"
-									placeholder="Email"
-									class="input input-bordered rounded-full"
-									required
-								/>
-								<label class="label">
-									<a
-										href="#"
-										class="label-text-alt link link-hover"
-										>Forgot password?</a
-									>
-								</label>
-							</div>
-							<div>
-								<label class="label">
-									<span class="label-text">Country</span>
-								</label>
-								<textarea
-									placeholder="Country"
-									class="textarea textarea-bordered textarea-xs w-full rounded-full"
-								></textarea>
-							</div>
-							<div>
-								<label class="label">
-									<span class="label-text">Topic</span>
-								</label>
-								<select
-									class="select select-bordered w-full rounded-full"
-								>
-									<option disabled selected>Media/PR</option>
-									<option>Jobs</option>
-									<option>Sales</option>
-									<option>Events</option>
-									<option>Others</option>
-								</select>
-							</div>
-							<div>
-								<label class="label">
-									<span class="label-text">Message</span>
-								</label>
-								<textarea
-									placeholder="Message"
-									class="textarea textarea-bordered textarea-xs w-full rounded-full"
-								></textarea>
-							</div>
-							<div class="mt-6">
-								<button
-									class="rounded-full px-6 text-white btn bg-red-700"
-								>
-									SEND
-								</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Hanson Robotics Limited address section -->
-		<div class="bg-base-200 p-12">
-			<div class="card card-side w-4/5 shadow-none rounded-none mx-auto">
-				<div class="card-body w-1/2 p-16 py-28">
-					<p class="font-medium">
-						Unit A, 25/F Block 2, <br />
-						Superluck Industrial Centre, <br />
-						57 Sha Tsui Road, <br />
-						Tsuen Wan, Hong Kong.
-					</p>
-					<h2 class="text-3xl font-semibold">HEADQUARTERS</h2>
-					<span class="text-gray-400">Hanson Robotics Limited</span>
-				</div>
-				<figure class="w-1/2">
-					<img
-						src="../assets/Tsuen-Wan-scaled.jpeg"
-						alt=""
-						class="w-full h-full"
-					/>
-				</figure>
-			</div>
-		</div>
-
-		<!-- Hanson Robotics mailing address -->
-		<div class="flex justify-between w-3/4 mx-auto mt-10">
-			<div>
-				<p class="font-medium text-xl">SALES</p>
+		<!-- About David Section -->
+		<div class="bg-base-200">
+			<div class="mt-16 p-16 w-5/6 mx-auto">
+				<h2 class="text-4xl font-bold">David Hanson Ph.D.</h2>
+				<h5 class="text-3xl my-8">CEO, Founder</h5>
+				<span
+					class="borber border-b-2 border-black w-20 inline-block mb-6"
+				></span>
+				<p>
+					David Hanson develops robots that are widely regarded as the
+					world’s most human-like in appearance, in a lifelong quest
+					to create true living, caring machines. To accomplish these
+					goals, Hanson integrates figurative arts with cognitive
+					science and robotics engineering, inventions novel skin
+					materials, facial expression mechanisms, and collaborative
+					developments in AI, within humanoid artworks like Sophia the
+					robot, which can engage people in naturalistic face-to-face
+					conversations and currently serve in AI research, education,
+					therapy, and other uses.
+					<br /><br />Hanson worked as a Walt Disney Imagineer, both a
+					sculptor and a technical consultant in robotics, and later
+					founded Hanson Robotics. As a researcher, Hanson published
+					dozens of papers in materials science, artificial
+					intelligence, cognitive science, and robotics journals —
+					including SPIE, IEEE, the International Journal of Cognitive
+					Science, IROS, AAAI, AI magazine and more. He wrote two
+					books including “Humanizing Robots” and received several
+					patents. Hanson was featured in the New York Times, Popular
+					Science, Scientific American, WIRED, BBC and CNN. He also
+					received earned awards from NASA, NSF, Tech Titans’
+					Innovator of the Year, RISD, Cooper Hewitt Design Triennial,
+					and the co-received the 2005 AAAI first place prize for open
+					interaction of an AI system. Hanson holds a Ph.D. in
+					Interactive Arts and Technology from the University of Texas
+					at Dallas, and a BFA in film Animation video from the Rhode
+					Island School of Design.
+				</p>
 				<a
-					class="text-gray-400 text-xl"
-					href="mailto:info@hansonrobotics.com"
-					>info@hansonrobotics.com</a
+					class="px-6 py-4 rounded-full bg-white shadow-xl text-zinc-400 hover:bg-black hover:text-white inline-block mt-16 text-sm"
+					href="https://www.hansonrobotics.com/wp-content/uploads/2018/12/DavidHansonPhD-CV_2018-12-05.pdf"
+					>VIEW DAVID'S CV</a
 				>
 			</div>
-			<div>
-				<p class="font-medium text-xl">PRESS & MEDIA</p>
-				<a
-					class="text-gray-400 text-xl"
-					href="mailto:media@hansonrobotics.com"
-					>media@hansonrobotics.com</a
-				>
-			</div>
-			<div>
-				<p class="font-medium text-xl">CAREERS</p>
-				<a
-					class="text-gray-400 text-xl"
-					href="mailto:jobs@hansonrobotics.com"
-					>jobs@hansonrobotics.com</a
-				>
-			</div>
-		</div>
-
-		<!-- FQAS button -->
-		<div class="text-center my-24">
-			<a
-				class="rounded-full px-8 py-4 shadow-2xl text-gray-500 hover:bg-black hover:text-white"
-				href="./faqs.html"
-				>HANSON ROBOTICS FQAS</a
-			>
 		</div>
 
 		<!-- Social media icons & join us section  -->
-		<div class="flex flex-col items-start w-1/3 mx-auto py-6 mb-6">
+		<div class="flex flex-col items-start w-1/3 mx-auto py-6 my-6">
 			<div class="flex justify-between px-12 w-full">
 				<i class="fa-brands fa-facebook-f custom-icon"></i>
 				<i class="fa-brands fa-instagram custom-icon"></i>

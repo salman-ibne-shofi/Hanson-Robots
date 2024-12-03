@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FAQs - Hanson Robotics</title>
+		<!-- Import TailwindCss -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Import DaisyUI -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+		<!-- This is Navbar Section -->
+		<div class="navbar shadow-md bg-base-100 my-2 fixed -top-4 px-16 z-50">
+			<div class="navbar-start">
+				<a href="../index.html">
+					<img
+						class="h-8"
+						src="../assets/hanson-logo-removebg-preview.png"
+						alt=""
+					/>
+				</a>
+			</div>
+			<div class="navbar-center hidden lg:flex">
+				<ul class="menu menu-horizontal px-1">
+					<!-- Menu Summary of About Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<a
+								href="../about/index.html"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ABOUT</a
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="../about/leadership.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>LEADERSHIP</a
+									>
+								</li>
+								<li>
+									<a
+										href="../about/awards.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>AWARDS</a
+									>
+								</li>
+								<li>
+									<a
+										href="../about/meet_the_team.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>MEET THE TEAM</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- Menu Summary of Robot Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<a
+								href="../robots/index.html"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ROBOTS</a
+							>
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg group-hover:block p-0"
+							>
+								<div class="dropdown dropdown-right p-0">
+									<li>
+										<a
+											tabindex="0"
+											href="../robots/sophia.html"
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+											>SOPHIA
+											<i
+												class="fa-solid fa-caret-right"
+											></i
+										></a>
+									</li>
+									<ul
+										tabindex="0"
+										class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ml-12"
+									>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											BEING SOPHIA
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											ART BY SOPHIA THE ROBOT
+										</li>
+										<li
+											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>
+											SOPHIA 2020
+										</li>
+									</ul>
+								</div>
+								<li>
+									<a
+										href="../robots/little_sophia.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>LITTLE SOPHIA</a
+									>
+								</li>
+								<li>
+									<a
+										href="../robots/index.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>ALL ROBOTS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- Menu Summary HANSON AI Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<a
+								href="../hanson_ai/index.html"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>HANSON AI</a
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="../hanson_ai/humanizing_ai.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>HUMANIZING AI</a
+									>
+								</li>
+								<li>
+									<a
+										href="../hanson_ai/research.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>RESEARCH</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- Menu Summary Resources Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<a
+								href="../resources/index.html"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>RESOURCES</a
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+							>
+								<li>
+									<a
+										href="../resources/blog.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>BLOG</a
+									>
+								</li>
+								<li>
+									<a
+										href="../resources/news.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>NEWS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<li>
+						<a href="./index.html" class="font-semibold">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar-end flex gap-8">
+				<i class="fa-brands fa-facebook-f"></i>
+				<i class="fa-brands fa-linkedin-in"></i>
+				<i class="fa-brands fa-twitter"></i>
+			</div>
+		</div>
+
+		<!-- Banner Section -->
+		<div class="carousel w-full h-[60vh] mt-12">
+			<div class="carousel-item relative w-full">
+				<img
+					src="../assets/backsophia.jpg"
+					class="w-full object-cover object-center"
+				/>
+				<div
+					class="absolute z-30 inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center"
+				>
+					<h2 class="text-7xl text-white font-semibold">FAQS</h2>
+					<p class="text-4xl text-white mt-4">
+						Frequently Asked Questions
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- QUESTIONS ABOUT HANSON ROBOTICS Section -->
+		<div class="p-28">
+			<h1 class="text-2xl font-medium">
+				GENERAL QUESTIONS ABOUT HANSON ROBOTICS
+			</h1>
+			<span class="border-b-2 border-black w-16 inline-block my-6"></span>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					What is the mission of Hanson Robotics’ robots?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Our remarkably human-like robots serve as platforms for
+						Hanson Robotics’ AI and robotics research in the areas
+						of education, healthcare, sales, and entertainment
+						applications. In time, our robots will come to
+						understand and care about humans through cultivating
+						meaningful relationships with the people whose lives
+						they touch.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					What are the commercial applications of Hanson Robotics’
+					robots?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Hanson Robotics is committed to radically disrupting the
+						consumer and commercial robotics market with
+						humans-scale and consumer robots that include verbal and
+						nonverbal interactivity through high-quality, human-like
+						expressions. Hanson robots entertain, educate, and
+						enrich the lives of consumers while serving businesses
+						in a broad variety of commercial applications. From
+						research and academics uses to B2B service robotics
+						applications, to entertainment and education, our robots
+						can be used in a variety of use cases. Their engaging
+						expressiveness and conversational abilities, combined
+						with empathetic AI, empower the robots to be likable,
+						perceptive, and trusted companions for the humans whose
+						lives they touch.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					Where does Hanson Robotics focus its research efforts?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Hanson Robotics’ world-class team of Ph.D.’s are
+						continuously working on AI research and development,
+						robotics engineering, experiential design, and material
+						science. Please visit our Research page for our
+						published papers.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					How many robots does Hanson Robotics have?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Spanning two decades, we have developed many different
+						robot characters including Sophia the Robot, Han,
+						Professor Einstein, Philip K Dick, Jules, Zeno, Albert
+						Einstein HUBO, Alice, BINA48, and more. A little known
+						fact is that there have been 24 versions of Sophia built
+						over the last several years! Please visit our Robot page
+						to learn more about the entire Hanson Robot family
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					How do I inquire about open job positions at Hanson
+					Robotics?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>Please email us at jobs@hansonrobotics.com.</p>
+				</div>
+			</div>
+
+			<!-- QUESTIONS ABOUT SOPHIA section -->
+			<h1 class="text-2xl font-medium mt-12">QUESTIONS ABOUT SOPHIA</h1>
+			<span class="border-b-2 border-black w-16 inline-block my-6"></span>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					Who is Sophia the Robot?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Sophia is first and foremost a research platform for
+						Hanson Robotics’ ongoing AI and robotics research work.
+						Sophia also is an architecture and a platform for the
+						development of real AI applications. We are dedicating
+						much thought to ways that humanlike robots and agents
+						can facilitate next generation AI leaps and their uses
+						in helping people. Finally, Sophia is an evolving
+						science fiction character we use to help us explore the
+						future of AI and lifelike humanoids, and to engage the
+						public in the discussion of these issues. All three
+						approaches are discussed in media interviews,
+						presentations, and Hanson Robotics websites. Sophia has
+						several different modes including running fully
+						autonomously interacting with people, delivering open
+						domain conversational interactions. Other times she's
+						written by a team of writers, as a character, depicting
+						our hopes for the future of conscious, caring AI.
+						Sometimes she's running our latest AI R&D software,
+						pushing the boundaries of cognitive systems research.
+						And sometimes Sophia serves research into specific
+						service robot applications.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					What is Sophia the Robot’s purpose?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Hanson Robotics mission is to make a positive impact on
+						humanity through the development of intelligent,
+						empathetic robots that can learn, teach, entertain, and
+						help solve critical challenges. Our motivation behind
+						creating Sophia, first and foremost, is a research
+						platform for Hanson Robotics' ongoing AI and robotics
+						research work. Sophia also is an architecture and a
+						platform for the development of real AI applications,
+						and an evolving science fiction character we use to help
+						us explore the future of AI and lifelike humanoids. Our
+						aspiration for Sophia is to engage in rich emotional
+						conversation and meaningful relationships with humans --
+						conveying and perceiving feelings and thoughts. Sophia
+						is not only a vessel for AI research and development,
+						but we hope she will also be a helpful member of society
+						that can aid with medical training applications,
+						education, entertainment, animatronics in museums and
+						theme parks, university research. Ultimately, with
+						Sophia, we strive for machine wisdom. Sophia's name
+						originates from the word "philosophy," meaning the love
+						of wisdom in ancient Greek.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					How does Sophia learn?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Sophia’s brain is powered by Hanson AI’s OpenCog. Hanson
+						AI OpenCog is a cloud-based AI program that enables
+						Hanson Robotics to have large-scale cloud control of its
+						robots. Sophia’s brain also has deep-learning data
+						analytics for processing the rich social data gathered
+						from her millions of interactions. She learns through
+						both her own interactions, like humans, as well as what
+						she is programmed to know.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					How is Sophia programmed for public appearances?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						For public appearances, Sophia applies different aspects
+						of her Hanson AI dialog system to achieve different
+						communication objectives. When she needs to deliver a
+						prepared speech as a public speaker, she uses a mix of
+						scripted dialog and AI moderated by a robot technician.
+						Most of the time she engages with people in an
+						autonomous conversation driven by an open dialog system.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					What drives Sophia’s conversation and how does she know how
+					to respond?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						What drives Sophia’s conversations is the Hanson AI
+						OpenCog dialog system. This is a sophisticated natural
+						language conversational system, which facilitates
+						open-ended conversation with users about a wide variety
+						of topics. In addition to our rapidly evolving and rich
+						open dialog system architecture, Sophia’s technology is
+						embodied, adding expressions, computer vision, NLP, soft
+						robotics and movement to that rich dialog tech core.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					Does Sophia have feelings?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Through our cutting-edge AI technology, Sophia is
+						continuously learning from her interactions with humans,
+						especially feelings like empathy and compassion Her
+						animation technology includes over 60 facial expressions
+						such as smiles, frowns, amusement and even scowls and
+						sneers. Astoundingly, Sophia knows when to use the
+						appropriate expressions without being programmed,
+						demonstrating her ability to learn appropriate feelings
+						as she continues to grow
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					What happens when Sophia makes a mistake?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Sophia learns from every mistake that she makes, unlike
+						the rest of us! Her brain is an advanced AI technology
+						platform, enabling her to learn and evolve through every
+						experience.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					Who Sophia modeled after?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						The visual influence for Sophia and other Hanson robots
+						are drawn from several different human likenesses from
+						around the world. David Hanson sculpted and created
+						Sophia based on the people that surround him, his wife,
+						and even the bust of Nefertiti.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					Why is she a citizen of Saudi Arabia?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Sophia was gifted with citizenship to Saudi Arabia by
+						the Prince of Saudi Arabia. It was actually a surprise
+						to us, but we are using this opportunity to speak out
+						about human rights and the treatment of women in the
+						region.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					How do I follow Sophia's journey around the world?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Facebook: @RealSophiaRobot Instagram: @RealSophiaRobot
+						Twitter: @RealSophiaRobot LinkedIn: @RealSophiaRobot
+						YouTube: @RealSophiaRobot Pinterest: @SophiaRobot
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					Why did you design Sophia with a rolling base and not legs
+					in the first place? How does the rolling base work?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						We worked on Sophia’s walking legs even before her
+						rolling base. She is now on her enhanced, second version
+						of walking legs and also enhanced, second version of
+						rolling base. Her rolling base runs on batteries and
+						runs smoothly on both hard and carpeted floors.
+						Currently it is remote controlled but we are working on
+						the next version which will be enhanced with additional
+						sensors and auto-navigation abilities for service
+						robotics applications.
+					</p>
+				</div>
+			</div>
+
+			<!-- Social Influencer section -->
+			<h1 class="text-2xl font-medium mt-12">
+				Sophia Social Influencer, Brand Campaign and Event FAQs
+			</h1>
+			<span class="border-b-2 border-black w-16 inline-block my-6"></span>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					How do I book Sophia for a social influencer campaign?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						As the first AI Robot influencer, tell your brand's
+						story through Sophia's character on social media. With
+						close to 500,000 followers, Sophia can bring a unique
+						and high-impact aspect to your marketing campaigns.
+						Please contact us at info@hansonrobotics for more
+						information.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					How do I book Sophia for an event or brand campaign?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Please contact us at info@hansonrobotics.com or submit a
+						request through the Contact page on our website.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					What can Sophia do during an appearance?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Sophia is a social robot that loves to interact and
+						learn from humans. She participates in panel
+						discussions, photo sessions, meet and greet sessions,
+						keynote speeches, and engages in conversations on AI and
+						robotics, specifically about how these technologies
+						integrate into our lives.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					Does Sophia move on stage?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						Sophia comes with a remote-controlled wheeled tripod
+						base that allows her to easily move around on stage for
+						events.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					How many people travel with Sophia?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						We typically have two Hanson staff members that travel
+						with Sophia – a robot operator and a robot manager.
+					</p>
+				</div>
+			</div>
+			<div
+				class="collapse collapse-arrow border border-base-300 bg-base-200 rounded-none hover:bg-zinc-500 hover:text-white"
+			>
+				<input type="checkbox" class="peer" />
+				<div
+					class="collapse-title text-xl font-medium peer-checked:text-primary"
+				>
+					How can I work with Hanson Robotics and Sophia?
+				</div>
+				<div class="collapse-content peer-checked:block">
+					<p>
+						For business, partnership, and media inquiries, please
+						email us at info@hansonrobotics.com. For sales
+						inquiries, email us at sales@hansonrobotics.com.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer Section -->
+		<footer
+			class="footer bg-gray-900 p-10 flex flex-col items-center gap-16"
+		>
+			<div
+				class="flex w-5/6 justify-between text-base-content mx-auto text-gray-400 font-medium"
+			>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						RESOURCES
+					</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>PRESS</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>FAQS</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 text-xs"
+								>JOBS</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">Company</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>TERMS OF USE</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>PRIVACY POLICY</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>BLOG</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>SITEMAP</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<form>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						Newsletter
+					</h6>
+					<div>
+						<div>
+							<input
+								type="text"
+								name="email"
+								placeholder="your email address"
+								class="rounded-full p-2 w-full lg:min-w-64 text-xs font-light"
+							/>
+						</div>
+						<button
+							class="bg-red-700 text-white px-6 py-2 rounded-full mt-6 border-none"
+						>
+							Subscribe
+						</button>
+					</div>
+				</form>
+			</div>
+			<p class="text-white flex text-xs">
+				<span>Copyright &copy; 2024.</span>
+				<a href="" class="text-gray-300 hover:text-white"
+					>Hanson Robotics Ltd.</a
+				>
+			</p>
+		</footer>
+
+		<!-- Script -->
+		<script src="../script.js"></script>
+	</body>
+</html>
