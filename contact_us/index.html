@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Leadership</title>
+		<title>Contact Us</title>
 		<!-- Import TailwindCss -->
 		<script src="https://cdn.tailwindcss.com"></script>
 		<!-- Import DaisyUI -->
@@ -15,9 +15,9 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="../style.css" />
 	</head>
-	<body class="bg-base-200">
+	<body>
 		<!-- This is Navbar Section -->
-		<div class="navbar shadow-md fixed top-0 px-16 z-50 bg-white">
+		<div class="navbar shadow-md bg-base-100 my-2 fixed -top-4 px-16 z-50">
 			<div class="navbar-start">
 				<a href="../index.html">
 					<img
@@ -33,9 +33,9 @@
 					<ul class="list-none">
 						<li class="relative group">
 							<a
-								href="./index.html"
+								href="../about/index.html"
 								class="cursor-pointer font-semibold px-4 py-2 block"
-								>About</a
+								>ABOUT</a
 							>
 
 							<!-- Dropdown Content -->
@@ -44,14 +44,14 @@
 							>
 								<li>
 									<a
-										href="#"
+										href="../about/leadership.html"
 										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
 										>LEADERSHIP</a
 									>
 								</li>
 								<li>
 									<a
-										href="./awards.html"
+										href="../about/awards.html"
 										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
 										>AWARDS</a
 									>
@@ -74,7 +74,6 @@
 								class="cursor-pointer font-semibold px-4 py-2 block"
 								>ROBOTS</a
 							>
-
 							<!-- Dropdown Content -->
 							<ul
 								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg group-hover:block p-0"
@@ -132,6 +131,7 @@
 					<!-- Menu Summary HANSON AI Section -->
 					<ul class="list-none">
 						<li class="relative group">
+							<!-- Menu Summary -->
 							<a
 								href="../hanson_ai/index.html"
 								class="cursor-pointer font-semibold px-4 py-2 block"
@@ -162,10 +162,13 @@
 					<!-- Menu Summary Resources Section -->
 					<ul class="list-none">
 						<li class="relative group">
-							<a href="../resources/index.html"
+							<!-- Menu Summary -->
+							<a
+								href="../resources/index.html"
 								class="cursor-pointer font-semibold px-4 py-2 block"
 								>RESOURCES</a
 							>
+
 							<!-- Dropdown Content -->
 							<ul
 								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
@@ -187,7 +190,7 @@
 							</ul>
 						</li>
 					</ul>
-					<li><a href="../contact_us/index.html" class="font-semibold">CONTACT</a></li>
+					<li><a href="#" class="font-semibold">CONTACT</a></li>
 				</ul>
 			</div>
 			<div class="navbar-end flex gap-8">
@@ -196,53 +199,96 @@
 				<i class="fa-brands fa-twitter"></i>
 			</div>
 		</div>
-		<!-- Title -->
-		<h1
-			class="text-4xl font-semibold justify-center items-center text-center mt-24 mb-12"
-		>
-			Leadership
-		</h1>
 
-		<!-- Leadership Card Section -->
-		<div
-			class="card card-side shadow-xl rounded-none w-3/4 mx-auto hover:shadow-6xl"
-		>
-			<figure class="w-1/3">
-				<img src="../assets/d.jpg" alt="" class="w-full h-full" />
-			</figure>
-			<div class="card-body w-2/3 p-16 bg-white">
-				<h2 class="card-title text-3xl">
-					<a href="" class="hover:text-red-700 text-gray-600"
-						>David Hanson</a
-					>, Ph.D.
-				</h2>
-				<span>CEO, Founder</span>
-				<p class="text-gray-400">
-					David Hanson develops robots that are widely regarded as the
-					world’s most human-like in appearance, in a lifelong quest
-					to create true living, caring machines. To accomplish these
-					goals, Hanson integrates figurative arts with cognitive
-					science and robotics engineering, inventions novel skin
-					materials, facial expression mechanisms, and collaborative
-					developments in AI, within humanoid artworks like Sophia the
-					robot, which can engage people in naturalistic face-to-face
-					conversations and currently serve in AI research, education,
-					therapy, and other uses.
-				</p>
-				<div class="card-actions">
-					<a
-						class="no-underline hover:underline hover:text-red-700 font-semibold transition-all transition-100"
-						href="#"
-						>Read More</a
-					>
+		<!-- Contact Us form Section -->
+		<div class="bg-base-100 py-32">
+			<div class="w-full">
+				<div class="flex-col lg:flex-row-reverse">
+					<div class="text-center w-2/5 mx-auto">
+						<h1 class="text-5xl font-bold">Contact Us</h1>
+						<p class="py-6 text-gray-500">
+							Contact Us For Sophia event appearances (virtual or
+							live), sponsorship inquiries or questions about
+							research robot sales, press or careers, please
+							submit this form, or scroll down for direct email
+							contact information. Thank you!
+						</p>
+					</div>
+					<div class="w-2/5 mx-auto">
+						<form class="">
+							<div class="form-control">
+								<label class="label">
+									<span class="label-text">Name</span>
+								</label>
+								<input
+									type="text"
+									placeholder="Name"
+									class="input input-bordered rounded-full"
+									required
+								/>
+							</div>
+							<div class="form-control">
+								<label class="label">
+									<span class="label-text">Email</span>
+								</label>
+								<input
+									type="email"
+									placeholder="Email"
+									class="input input-bordered rounded-full"
+									required
+								/>
+								<label class="label">
+									<a
+										href="#"
+										class="label-text-alt link link-hover"
+										>Forgot password?</a
+									>
+								</label>
+							</div>
+							<div>
+								<label class="label">
+									<span class="label-text">Country</span>
+								</label>
+								<textarea
+									placeholder="Country"
+									class="textarea textarea-bordered textarea-xs w-full rounded-full"
+								></textarea>
+							</div>
+							<div>
+								<label class="label">
+									<span class="label-text">Topic</span>
+								</label>
+								<select
+									class="select select-bordered w-full rounded-full"
+								>
+									<option disabled selected>Media/PR</option>
+									<option>Jobs</option>
+									<option>Sales</option>
+									<option>Events</option>
+									<option>Others</option>
+								</select>
+							</div>
+							<div>
+								<label class="label">
+									<span class="label-text">Message</span>
+								</label>
+								<textarea
+									placeholder="Message"
+									class="textarea textarea-bordered textarea-xs w-full rounded-full"
+								></textarea>
+							</div>
+							<div class="mt-6">
+								<button
+									class="rounded-full px-6 text-white btn bg-red-700"
+								>
+									SEND
+								</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
-		<button
-			class="btn rounded-full flex mx-auto my-12 bg-white text-gray-400 hover:text-white hover:bg-black shadow-xl px-6"
-		>
-			MEET THE TEAM
-		</button>
 
 		<!-- Footer Section -->
 		<footer
