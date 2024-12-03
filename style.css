@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 body,
 html {
@@ -7,8 +7,8 @@ html {
 }
 
 /* Overwrite daisyUI card padding */
-.p-10{
-    padding: 2.5rem !important;
+.p-10 {
+	padding: 2.5rem !important;
 }
 
 .header-bg {
@@ -139,4 +139,16 @@ html {
 .content p {
 	font-size: 3rem;
 	font-size: large;
+}
+
+.cog-map-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cog-map-left {
+	background-image: url("./assets/map3.jpg");
+}
+.cog-map-right {
+	background-image: url("./assets/map1-1.jpg");
 }
