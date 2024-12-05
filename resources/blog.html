@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Blogs</title>
+		<title>Hanson Blog - Hanson Robotics</title>
 		<!-- Import TailwindCss -->
 		<script src="https://cdn.tailwindcss.com"></script>
 		<!-- Import DaisyUI -->
@@ -17,7 +17,9 @@
 	</head>
 	<body>
 		<!-- This is Navbar Section -->
-		<div class="navbar shadow-md bg-base-100 my-2 fixed -top-4 px-16 z-50">
+		<div
+			class="navbar bg-base-100 shadow-md my-2 fixed -top-2 px-2 md:px-4 lg:px-16 z-50"
+		>
 			<div class="navbar-start">
 				<a href="../index.html">
 					<img
@@ -27,7 +29,7 @@
 					/>
 				</a>
 			</div>
-			<div class="navbar-center hidden lg:flex">
+			<div class="navbar-center hidden md:flex">
 				<ul class="menu menu-horizontal px-1">
 					<!-- Menu Summary of About Section -->
 					<ul class="list-none">
@@ -40,7 +42,7 @@
 
 							<!-- Dropdown Content -->
 							<ul
-								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+								class="absolute top-8 -left-4 hidden min-w-40 bg-white shadow-md rounded-lg p-0 group-hover:block"
 							>
 								<li>
 									<a
@@ -76,52 +78,66 @@
 							>
 							<!-- Dropdown Content -->
 							<ul
-								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg group-hover:block p-0"
+								class="absolute top-8 -left-4 min-w-60 hidden bg-white shadow-md rounded-lg group-hover:block p-0"
 							>
-								<div class="dropdown dropdown-right p-0">
-									<li>
-										<a
-											tabindex="0"
-											href="../robots/sophia.html"
-											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
-											>SOPHIA
-											<i
-												class="fa-solid fa-caret-right"
-											></i
-										></a>
-									</li>
-									<ul
-										tabindex="0"
-										class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ml-12"
+								<details class="dropdown dropdown-right">
+									<summary
+										tabindex="3"
+										class="w-full min-w-60 flex items-center justify-between cursor-pointer p-2 hover:bg-base-200 rounded-lg"
 									>
-										<li
-											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										<a
+											href="../robots/sophia.html"
+											class="hover:bg-base-200 hover:ml-2 hover:text-red-700 transition-all pl-2"
 										>
-											BEING SOPHIA
-										</li>
-										<li
-											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+											SOPHIA
+										</a>
+
+										<svg
+											class="w-4 h-4 ml-2 transition-transform group-open:rotate-180"
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke="currentColor"
 										>
-											ART BY SOPHIA THE ROBOT
-										</li>
-										<li
-											class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M19 9l-7 7-7-7"
+											/>
+										</svg>
+									</summary>
+
+									<ul class="menu bg-base-100 z-[1] p-2">
+										<a
+											href="../robots/being_sophia.html"
+											class="p-2 hover:bg-base-200 rounded-md"
+											><li>BEING SOPHIA</li></a
 										>
-											SOPHIA 2020
-										</li>
+										<a
+											href="#"
+											class="p-2 hover:bg-base-200 rounded-md"
+											><li>ART BY SOPHIA THE ROBOT</li></a
+										>
+										<a
+											href="#"
+											class="p-2 hover:bg-base-200 rounded-md"
+											><li>SOPHIA 2020</li></a
+										>
 									</ul>
-								</div>
+								</details>
+
 								<li>
 									<a
 										href="../robots/little_sophia.html"
-										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-4 py-2"
 										>LITTLE SOPHIA</a
 									>
 								</li>
 								<li>
 									<a
 										href="../robots/index.html"
-										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-4 py-2"
 										>ALL ROBOTS</a
 									>
 								</li>
@@ -140,19 +156,19 @@
 
 							<!-- Dropdown Content -->
 							<ul
-								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+								class="absolute top-8 left-0 hidden min-w-40 bg-white shadow-md rounded-lg group-hover:block ml-0 pl-0"
 							>
 								<li>
 									<a
 										href="../hanson_ai/humanizing_ai.html"
-										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
 										>HUMANIZING AI</a
 									>
 								</li>
 								<li>
 									<a
 										href="../hanson_ai/research.html"
-										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
 										>RESEARCH</a
 									>
 								</li>
@@ -164,39 +180,333 @@
 						<li class="relative group">
 							<!-- Menu Summary -->
 							<a
-								href="../resources/index.html"
+								href="./index.html"
 								class="cursor-pointer font-semibold px-4 py-2 block"
 								>RESOURCES</a
 							>
 
 							<!-- Dropdown Content -->
 							<ul
-								class="absolute top-10 -left-4 hidden w-40 bg-white shadow-md rounded-lg p-2 group-hover:block"
+								class="absolute top-8 left-0 hidden min-w-40 bg-white shadow-md rounded-lg ml-0 pl-0 group-hover:block"
 							>
 								<li>
 									<a
-										href="../resources/blog.html"
-										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										href="./blog.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
 										>BLOG</a
 									>
 								</li>
 								<li>
 									<a
-										href="../resources/news.html"
-										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										href="./news.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
 										>NEWS</a
 									>
 								</li>
 							</ul>
 						</li>
 					</ul>
-					<li><a href="../contact_us/index.html" class="font-semibold">CONTACT</a></li>
+					<li>
+						<a href="../contact_us/index.html" class="font-semibold"
+							>CONTACT</a
+						>
+					</li>
 				</ul>
 			</div>
 			<div class="navbar-end flex gap-8">
-				<i class="fa-brands fa-facebook-f"></i>
-				<i class="fa-brands fa-linkedin-in"></i>
-				<i class="fa-brands fa-twitter"></i>
+				<details
+					class="dropdown dropdown-bottom dropdown-end md:hidden"
+				>
+					<summary
+						tabindex="0"
+						role="button"
+						class="btn btn-ghost btn-circle"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-5 w-5"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h7"
+							/>
+						</svg>
+					</summary>
+					<ul
+						tabindex="0"
+						class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+					>
+						<details class="dropdown dropdown-bottom dropdown-end">
+							<summary
+								tabindex="10"
+								class="flex items-center justify-between cursor-pointer p-2 hover:text-blue-900"
+							>
+								<a href="../about/index.html" class="">
+									<li class="">ABOUT</li>
+								</a>
+
+								<svg
+									class="w-4 h-4 ml-2 transition-transform group-open:rotate-180"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"
+									/>
+								</svg>
+							</summary>
+
+							<ul class="menu bg-base-100 z-[1] p-2">
+								<a
+									href="../about/leadership.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>LEADERSHIP</li></a
+								>
+								<a
+									href="../about/awards.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>AWARDS</li></a
+								>
+								<a
+									href="../about/meet_the_team.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>MEET THE TEAM</li></a
+								>
+							</ul>
+						</details>
+
+						<details class="dropdown dropdown-bottom dropdown-end">
+							<summary
+								tabindex="11"
+								class="flex items-center justify-between cursor-pointer p-2 hover:text-blue-900"
+							>
+								<a
+									href="../robots/index.html"
+									class="hover:text-blue-900"
+									><li class="">ROBOTS</li></a
+								>
+
+								<svg
+									class="w-4 h-4 ml-2 transition-transform group-open:rotate-180"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"
+									/>
+								</svg>
+							</summary>
+
+							<ul class="menu bg-base-100 z-[1] p-2">
+								<details
+									class="dropdown dropdown-bottom dropdown-end"
+								>
+									<summary
+										tabindex="11"
+										class="flex items-center justify-between cursor-pointer p-2 hover:text-blue-900"
+									>
+										<a
+											href="../robots/sophia.html"
+											class="hover:text-blue-900"
+											><li class="">SOPHIA</li></a
+										>
+
+										<svg
+											class="w-4 h-4 ml-2 transition-transform group-open:rotate-180"
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke="currentColor"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M19 9l-7 7-7-7"
+											/>
+										</svg>
+									</summary>
+
+									<ul class="menu bg-base-100 z-[1] p-2">
+										<a
+											href="../robots/being_sophia.html"
+											class="p-2 hover:bg-base-200 rounded-md"
+											><li>BEING SOPHIA</li></a
+										>
+										<a
+											href="#"
+											class="p-2 hover:bg-base-200 rounded-md"
+											><li>ART BY SOPHIA THE ROBOT</li></a
+										>
+										<a
+											href="#"
+											class="p-2 hover:bg-base-200 rounded-md"
+											><li>SOPHIA 2020</li></a
+										>
+									</ul>
+								</details>
+
+								<a
+									href="../robots/little_sophia.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>LITTLE SOPHIA</li></a
+								>
+								<a
+									href="../robots/index.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>ALL ROBOTS</li></a
+								>
+							</ul>
+						</details>
+
+						<details class="dropdown dropdown-bottom dropdown-end">
+							<summary
+								tabindex="10"
+								class="flex items-center justify-between cursor-pointer p-2 hover:text-blue-900"
+							>
+								<a
+									href="../hanson_ai/index.html"
+									class="hover:text-blue-900"
+									><li class="">HANSON AI</li></a
+								>
+
+								<svg
+									class="w-4 h-4 ml-2 transition-transform group-open:rotate-180"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"
+									/>
+								</svg>
+							</summary>
+
+							<ul class="menu bg-base-100 z-[1] p-2">
+								<a
+									href="../hanson_ai/humanizing_ai.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>HUMANIZING AI</li></a
+								>
+								<a
+									href="../hanson_ai/research.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>RESEARCH</li></a
+								>
+							</ul>
+						</details>
+
+						<details class="dropdown dropdown-bottom dropdown-end">
+							<summary
+								tabindex="10"
+								class="flex items-center justify-between cursor-pointer p-2 hover:text-blue-900"
+							>
+								<a
+									href="./index.html"
+									class="hover:text-blue-900"
+									><li class="">RESOURCES</li></a
+								>
+
+								<svg
+									class="w-4 h-4 ml-2 transition-transform group-open:rotate-180"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"
+									/>
+								</svg>
+							</summary>
+
+							<ul class="menu bg-base-100 z-[1] p-2">
+								<a
+									href="./blog.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>BLOG</li></a
+								>
+								<a
+									href="./news.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>NEWS</li></a
+								>
+							</ul>
+						</details>
+
+						<a
+							href="../contact_us/index.html"
+							class="hover:text-blue-900"
+							><li class="p-2">CONTACT</li></a
+						>
+						<li class="mt-4">
+							<div
+								class="flex mobile-menu dropdown-mobile-cs gap-4"
+							>
+								<a
+									href="https://www.facebook.com/hansonrobotics/"
+									><i
+										class="hover:scale-125 text-sm duration-500 fa-brands fa-facebook-f custom-icon"
+									></i
+								></a>
+								<a
+									href="https://www.linkedin.com/company/hanson-robotics/posts/?feedView=all"
+									><i
+										class="hover:scale-125 text-sm duration-500 fa-brands fa-linkedin-in custom-icon"
+									></i
+								></a>
+								<a href="https://x.com/hansonrobotics"
+									><i
+										class="hover:scale-125 text-sm duration-500 fa-brands fa-twitter custom-icon"
+									></i
+								></a>
+							</div>
+						</li>
+					</ul>
+				</details>
+				<a
+					href="https://www.facebook.com/hansonrobotics/"
+					class="hidden md:inline-block"
+					><i
+						class="hover:scale-125 duration-500 fa-brands fa-facebook-f custom-icon"
+					></i
+				></a>
+				<a
+					href="https://www.linkedin.com/company/hanson-robotics/posts/?feedView=all"
+					class="hidden md:inline-block"
+					><i
+						class="hover:scale-125 duration-500 fa-brands fa-linkedin-in custom-icon"
+					></i
+				></a>
+				<a
+					href="https://x.com/hansonrobotics"
+					class="hidden md:inline-block"
+					><i
+						class="hover:scale-125 duration-500 fa-brands fa-twitter custom-icon"
+					></i
+				></a>
 			</div>
 		</div>
 
@@ -212,12 +522,14 @@
 
 				<!-- Content Section -->
 				<div
-					class="absolute inset-0 hover:bg-black/60 bg-black/50 flex flex-col justify-center text-white px-64"
+					class="absolute inset-0 hover:bg-black/60 bg-black/50 flex flex-col justify-center text-white text-center lg:text-left text-left p-16"
 				>
-					<h1 class="text-xl md:text-4xl font-bold mb-4 w-1/2">
+					<h1
+						class="text-xl md:text-4xl font-bold mb-4 w-full lg:w-1/2"
+					>
 						Playasia and Hanson Robotics to Launch Merchandise Line
 					</h1>
-					<p class="mb-6 w-1/2">
+					<p class="mb-6 w-full lg:w-1/2">
 						The two Hong Kong based companies are collaborating on
 						lines of collectible and wearable merchandise featuring
 						SOPHIA, the world-famous robot. Hong Kong (7 October
@@ -229,22 +541,22 @@
 
 		<!-- Cards -->
 		<div class="bg-base-300 py-8">
-			<div class="grid grid-cols-2 w-3/4 mx-auto gap-6">
+			<div class="grid grid-cols-1 lg:grid-cols-2 w-3/4 mx-auto gap-6">
 				<!-- card 1 -->
 				<div
-					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
+					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full flex flex-col lg:flex-row"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/David-with-multiple-Sophias-2-285x300.png"
 								alt=""
 								title="Click to learn more about SophiaDAO!"
-								class="transition-all duration-300 ease-in-out group-hover:brightness-75 h-80"
+								class="transition-all duration-300 ease-in-out group-hover:brightness-75"
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
 							SophiaDAO: Governance Organization for AGI
 							Development
@@ -265,7 +577,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/1_NOmGdicMgCx6gTfq4XvyEw-285x300.jpeg"
@@ -275,7 +587,7 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
 							The DAO of Sophia
 						</h2>
@@ -297,7 +609,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/4th-birthday-3-285x300.jpg"
@@ -307,7 +619,7 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
 							What Does Sophia the Robot and a Four-Year-Old Human
 							Have in Common (or Not)?
@@ -327,7 +639,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/jimmyfallonSophia-285x300.jpg"
@@ -337,13 +649,13 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
 							The Making of Sophia: Sophia’s Singing Voice
 						</h2>
 						<p class="text-gray-600">
-							On November 21st, 2018, Sophia the Robot of
-							Hanson...
+							The Making of Sophia: Sophia’s Singing Voice On
+							November 21st, 2018, Sophia the Robot of Hanson...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -357,7 +669,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/306A7065-285x300.jpg"
@@ -367,14 +679,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Hanson Robotics’ Spotlight Series: Meet Nora Duenas,
+							Robot Developer
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Meet Nora C. Duenas, Robot Developer, Hong Kong
+							Who...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -388,7 +700,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Sophia-2020-285x300.jpg"
@@ -398,14 +710,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Sophia 2020 – A Vision for Robots Who Can Help
+							People
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Since the beginning of Hanson Robotics Limited, our
+							robots...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -419,7 +731,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/IMG-20191125-WA0014-285x300.jpg"
@@ -429,15 +741,12 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Hanson Robotics’ Spotlight Series: Meet Gerardo
+							Morales, Robotics Engineer
 						</h2>
-						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
-						</p>
+						<p class="text-gray-600">Meet Gerardo Morales...</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
 								>David Hanson</a
@@ -450,7 +759,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/brain.jpg"
@@ -460,14 +769,15 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							The Making of Sophia: How Sophia Draws The Making of
+							Sophia: How Sophia Draws
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Introduction Hanson Robotics stands out in a crowded
+							field of competitors because it works at the
+							intersection of robotics,...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -481,7 +791,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/2019-10-08_21-48-39-285x300.png"
@@ -491,14 +801,13 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Sophia at NY Fashion Week 2019:
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Futuristic Fashion, Fun and an Unexpected
+							Interview...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -512,7 +821,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Rolling-Base-285x300.png"
@@ -522,14 +831,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							The Making of Sophia: Rolling Base
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Introduction Mobile robotics is a subfield of
+							robotics focusing on locomotion, or robots that are
+							not fixed to a single location. This can include...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -543,7 +852,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Wenwei-285x300.jpg"
@@ -553,14 +862,13 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Hanson Robotics’ Spotlight Series: Meet Wenwei
+							Huang, Software Developer
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Meet Wenwei Huang, Software Developer, Hong Kong...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -574,7 +882,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/audience.jpg"
@@ -584,14 +892,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Personality in AI: Why Someday Soon Your Toaster
+							Could be an Extrovert
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							With the introduction of digital voice assistants
+							on...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -605,7 +913,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/sophia_snapshot_robot-1-285x300.png"
@@ -615,14 +923,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							The Best of #SophiaAsks
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							We love Sophia’s social media fans for many reasons.
+							But we especially appreciate her followers for
+							adding to the #SophiaAsks conversations,...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -636,7 +944,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Mengna-Lei-285x300.jpg"
@@ -646,15 +954,13 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Mengna Lei Hanson Robotics Hanson Robotics’
+							Spotlight Series: Meet Mengna Lei, Robot Animation
+							Expert
 						</h2>
-						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
-						</p>
+						<p class="text-gray-600">Meet Mengna Lei, Robot...</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
 								>David Hanson</a
@@ -667,7 +973,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Greg-Kochan-285x300.jpg"
@@ -677,14 +983,12 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Hanson Robotics’ Spotlight Series:
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Meet Gregory Kochan, Head Production Supervisor...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -698,7 +1002,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Sophia-credit-card-285x300.jpg"
@@ -708,14 +1012,13 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							The Making Of Sophia: Hardware Engineering for Arms
+							and Hands
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Social robots living and working with humans must...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -729,7 +1032,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Brian-Lau-285x300.jpg"
@@ -739,14 +1042,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Hanson Robotics’ Spotlight Series: Meet Brian Lau,
+							Robot Operator
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Introducing Brian Lau, Robot Operator, Hong Kong
+							What...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -760,7 +1063,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Paul-Bridges-1-285x300.jpg"
@@ -770,14 +1073,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Hanson Robotics’ Spotlight Series: Meet Paul
+							Bridges, Director, Hardware
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Introducing Paul Bridges, Director of Hardware,
+							Hong...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -791,7 +1094,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/2019-07-08_8-14-31-285x300.jpg"
@@ -801,14 +1104,13 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Sarah Rose Siskind Hanson Robotics’ Spotlight
+							Series: Meet Sarah Rose Siskind, Head Comedy Writer
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							This is the next of a series of....
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -822,7 +1124,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/AdobeStock_262012552-285x300.jpeg"
@@ -832,14 +1134,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							#AskSophia Top Ten Q&As
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							If you follow @RealSophiaRobot on Twitter and
+							Facebook, you know we launched an ongoing Q&A series
+							called...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -853,7 +1155,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Mario-Guzman-285x300.jpg"
@@ -863,14 +1165,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Mario Guzman Hanson Robotics’ Spotlight Series: Meet
+							Mario Guzman, Robot Operator
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							This is the next of a series of interview posts
+							introducing...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -884,7 +1186,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/2019-06-18_22-42-15-285x300.png"
@@ -894,15 +1196,12 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							The Making of Sophia: Facial Recognition,
+							Expressions and the Loving AI Project
 						</h2>
-						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
-						</p>
+						<p class="text-gray-600">Humans are increasingly...</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
 								>David Hanson</a
@@ -915,7 +1214,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Amy-Lee-285x300.jpg"
@@ -925,14 +1224,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Amy Lee, Hanson Robotics Limited Hanson Robotics’
+							Spotlight Series: Meet Amy Lee, Hardware Lab Office
+							Manager
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							This is the fifth of a series of...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -946,7 +1245,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/brain.jpg"
@@ -956,14 +1255,15 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							The Making of Sophia: Frubber® The Making of Sophia:
+							Frubber®
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							The new breed of social robots designed to interact
+							with humans and other robots demands that these
+							machines be highly effective...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -977,7 +1277,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Star-Ferry-Pier-1-285x300.jpeg"
@@ -987,14 +1287,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Hanson Robotics’ Spotlight Series: Meet KK Li,
+							Senior Quality Engineer
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Hanson Robotics’ Spotlight Series This is the fourth
+							of a...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -1008,7 +1308,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Charlotte-Poon-285x300.jpg"
@@ -1018,14 +1318,15 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Hanson Robotics’ Spotlight Series: Meet Charlotte
+							Poon
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Hanson Robotics’ Spotlight Series This is the second
+							of a series of interview posts introducing our
+							amazing...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -1039,7 +1340,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Annotation-2019-04-16-170122-285x300.jpg"
@@ -1049,14 +1350,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							The Making of Sophia: Sophia’s Legs
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Why a Robot Needs Legs In the field of social
+							robotics, a robot must be able to function in a
+							human world designed by...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -1070,7 +1371,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/Annotation-2019-04-12-101223-285x300.jpg"
@@ -1080,14 +1381,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Hanson Robotics’ Spotlight Series: Meet Jessica
+							Freeney
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Hanson Robotics’ Spotlight Series This is the first
+							of a...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -1101,7 +1402,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/jimmyfallonSophia-285x300.jpg"
@@ -1111,14 +1412,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Sophia’s Reflections on 2018 – The Video Series
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							It was another eventful and productive year for
+							Hanson Robotics’ most advanced robot, Sophia. She
+							learned how to...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -1132,7 +1433,7 @@
 				<div
 					class="card lg:card-side bg-base-100 shadow-md rounded-none w-full"
 				>
-					<a class="hover:bg-black/50 w-1/2" href="#">
+					<a class="hover:bg-black/50 w-full lg:w-1/2" href="#">
 						<figure class="relative group">
 							<img
 								src="../assets/AdobeStock_175781915-285x300.jpeg"
@@ -1142,14 +1443,14 @@
 							/>
 						</figure>
 					</a>
-					<div class="card-body w-1/2">
+					<div class="card-body w-full lg:w-1/2">
 						<h2 class="card-title font-bold hover:text-red-700">
-							SophiaDAO: Governance Organization for AGI
-							Development
+							Consciousness and AI Tononi Phi: Sentience,
+							Consciousness and Smart AI Futures
 						</h2>
 						<p class="text-gray-600">
-							Originally published by Alishba Imran, March 15,
-							2021. I’m...
+							Philosopher David Chalmers gets the credit for
+							naming the...
 						</p>
 						<div class="text-red-700">
 							<a href="#" class="hover:text-black"
@@ -1163,14 +1464,36 @@
 		</div>
 
 		<!-- Social media icons & join us section  -->
-		<div class="flex flex-col items-start w-1/3 mx-auto py-6 my-6">
-			<div class="flex justify-between px-12 w-full">
-				<i class="fa-brands fa-facebook-f custom-icon"></i>
-				<i class="fa-brands fa-instagram custom-icon"></i>
-				<i class="fa-brands fa-twitter custom-icon"></i>
-				<i class="fa-brands fa-linkedin-in custom-icon"></i>
-				<i class="fa-brands fa-github custom-icon"></i>
-				<i class="fa-brands fa-youtube custom-icon"></i>
+		<div class="flex flex-col items-start w-2/3 md:w-1/3 mx-auto py-6 my-6">
+			<div class="flex justify-between gap-4 w-full">
+				<a href="https://www.facebook.com/hansonrobotics/"
+					><i
+						class="hover:scale-125 duration-500 fa-brands fa-facebook-f custom-icon"
+					></i></a
+				><a
+					href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fhansonrobotics%2F&is_from_rle"
+					><i
+						class="hover:scale-125 duration-500 fa-brands fa-instagram custom-icon"
+					></i></a
+				><a href="https://x.com/hansonrobotics"
+					><i
+						class="hover:scale-125 duration-500 fa-brands fa-twitter custom-icon"
+					></i></a
+				><a
+					href="https://www.linkedin.com/company/hanson-robotics/posts/?feedView=all"
+					><i
+						class="hover:scale-125 duration-500 fa-brands fa-linkedin-in custom-icon"
+					></i></a
+				><a href="https://github.com/hansonrobotics"
+					><i
+						class="hover:scale-125 duration-500 fa-brands fa-github custom-icon"
+					></i></a
+				><a
+					href="https://www.youtube.com/channel/UCUb1bZLNfEbTV1IiDb9kSVw"
+					><i
+						class="hover:scale-125 duration-500 fa-brands fa-youtube custom-icon"
+					></i
+				></a>
 			</div>
 		</div>
 
@@ -1179,7 +1502,7 @@
 			class="footer bg-gray-900 p-10 flex flex-col items-center gap-16"
 		>
 			<div
-				class="flex w-5/6 justify-between text-base-content mx-auto text-gray-400 font-medium"
+				class="flex flex-col lg:flex-row w-5/6 justify-between text-base-content mx-auto text-gray-400 font-medium"
 			>
 				<nav>
 					<h6 class="text-gray-50 font-bold text-xl mb-6">
@@ -1189,17 +1512,20 @@
 						<li class="w-56 border-b border-slate-400 mb-3">
 							<a
 								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								href="../footer/press.html"
 								>PRESS</a
 							>
 						</li>
 						<li class="w-56 border-b border-slate-400 mb-3">
 							<a
+								href="../contact_us/faqs.html"
 								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
 								>FAQS</a
 							>
 						</li>
 						<li class="w-56">
 							<a
+								href="../footer/jobs.html"
 								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 text-xs"
 								>JOBS</a
 							>
@@ -1212,17 +1538,20 @@
 						<li class="w-56 border-b border-slate-400 mb-3">
 							<a
 								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								href="../footer/terms.html"
 								>TERMS OF USE</a
 							>
 						</li>
 						<li class="w-56 border-b border-slate-400 mb-3">
 							<a
 								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								href="../footer/policy.html"
 								>PRIVACY POLICY</a
 							>
 						</li>
 						<li class="w-56 border-b border-slate-400 mb-3">
 							<a
+								href="./blog.html"
 								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
 								>BLOG</a
 							>
@@ -1230,6 +1559,7 @@
 						<li class="w-56">
 							<a
 								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								href="../footer/sitemap.html"
 								>SITEMAP</a
 							>
 						</li>

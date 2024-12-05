@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jobs - Hanson Robotics</title>
+		<!-- Import TailwindCss -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Import DaisyUI -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+		<!-- This is Navbar Section -->
+		<div
+			class="navbar bg-base-100 shadow-md my-2 fixed -top-2 px-2 md:px-4 lg:px-16 z-50"
+		>
+			<div class="navbar-start">
+				<a href="../index.html">
+					<img
+						class="h-8"
+						src="../assets/hanson-logo-removebg-preview.png"
+						alt=""
+					/>
+				</a>
+			</div>
+			<div class="navbar-center hidden md:flex">
+				<ul class="menu menu-horizontal px-1">
+					<!-- Menu Summary of About Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<a
+								href="../about/index.html"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ABOUT</a
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-8 -left-4 hidden min-w-40 bg-white shadow-md rounded-lg p-0 group-hover:block"
+							>
+								<li>
+									<a
+										href="../about/leadership.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>LEADERSHIP</a
+									>
+								</li>
+								<li>
+									<a
+										href="../about/awards.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>AWARDS</a
+									>
+								</li>
+								<li>
+									<a
+										href="../about/meet_the_team.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500"
+										>MEET THE TEAM</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- Menu Summary of Robot Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<a
+								href="../robots/index.html"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>ROBOTS</a
+							>
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-8 -left-4 min-w-60 hidden bg-white shadow-md rounded-lg group-hover:block p-0"
+							>
+								<details class="dropdown dropdown-right">
+									<summary
+										tabindex="3"
+										class="w-full min-w-60 flex items-center justify-between cursor-pointer p-2 hover:bg-base-200 rounded-lg"
+									>
+										<a
+											href="../robots/sophia.html"
+											class="hover:bg-base-200 hover:ml-2 hover:text-red-700 transition-all pl-2"
+										>
+											SOPHIA
+										</a>
+
+										<svg
+											class="w-4 h-4 ml-2 transition-transform group-open:rotate-180"
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke="currentColor"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M19 9l-7 7-7-7"
+											/>
+										</svg>
+									</summary>
+
+									<ul class="menu bg-base-100 z-[1] p-2">
+										<a
+											href="../robots/being_sophia.html"
+											class="p-2 hover:bg-base-200 rounded-md"
+											><li>BEING SOPHIA</li></a
+										>
+										<a
+											href="#"
+											class="p-2 hover:bg-base-200 rounded-md"
+											><li>ART BY SOPHIA THE ROBOT</li></a
+										>
+										<a
+											href="#"
+											class="p-2 hover:bg-base-200 rounded-md"
+											><li>SOPHIA 2020</li></a
+										>
+									</ul>
+								</details>
+
+								<li>
+									<a
+										href="../robots/little_sophia.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-4 py-2"
+										>LITTLE SOPHIA</a
+									>
+								</li>
+								<li>
+									<a
+										href="../robots/index.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-4 py-2"
+										>ALL ROBOTS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- Menu Summary HANSON AI Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<a
+								href="../hanson_ai/index.html"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>HANSON AI</a
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-8 left-0 hidden min-w-40 bg-white shadow-md rounded-lg group-hover:block ml-0 pl-0"
+							>
+								<li>
+									<a
+										href="../hanson_ai/humanizing_ai.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>HUMANIZING AI</a
+									>
+								</li>
+								<li>
+									<a
+										href="../hanson_ai/research.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>RESEARCH</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- Menu Summary Resources Section -->
+					<ul class="list-none">
+						<li class="relative group">
+							<!-- Menu Summary -->
+							<a
+								href="../resources/index.html"
+								class="cursor-pointer font-semibold px-4 py-2 block"
+								>RESOURCES</a
+							>
+
+							<!-- Dropdown Content -->
+							<ul
+								class="absolute top-8 left-0 hidden min-w-40 bg-white shadow-md rounded-lg ml-0 pl-0 group-hover:block"
+							>
+								<li>
+									<a
+										href="../resources/blog.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>BLOG</a
+									>
+								</li>
+								<li>
+									<a
+										href="../resources/news.html"
+										class="hover:decoration-none cursor-pointer block hover:text-red-700 hover:ml-2 transition-all duration-500 p-2"
+										>NEWS</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<li>
+						<a href="../contact_us/index.html" class="font-semibold"
+							>CONTACT</a
+						>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar-end flex gap-8">
+				<details
+					class="dropdown dropdown-bottom dropdown-end md:hidden"
+				>
+					<summary
+						tabindex="0"
+						role="button"
+						class="btn btn-ghost btn-circle"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-5 w-5"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h7"
+							/>
+						</svg>
+					</summary>
+					<ul
+						tabindex="0"
+						class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+					>
+						<details class="dropdown dropdown-bottom dropdown-end">
+							<summary
+								tabindex="10"
+								class="flex items-center justify-between cursor-pointer p-2 hover:text-blue-900"
+							>
+								<a href="../about/index.html" class="">
+									<li class="">ABOUT</li>
+								</a>
+
+								<svg
+									class="w-4 h-4 ml-2 transition-transform group-open:rotate-180"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"
+									/>
+								</svg>
+							</summary>
+
+							<ul class="menu bg-base-100 z-[1] p-2">
+								<a
+									href="../about/leadership.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>LEADERSHIP</li></a
+								>
+								<a
+									href="../about/awards.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>AWARDS</li></a
+								>
+								<a
+									href="../about/meet_the_team.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>MEET THE TEAM</li></a
+								>
+							</ul>
+						</details>
+
+						<details class="dropdown dropdown-bottom dropdown-end">
+							<summary
+								tabindex="11"
+								class="flex items-center justify-between cursor-pointer p-2 hover:text-blue-900"
+							>
+								<a
+									href="../robots/index.html"
+									class="hover:text-blue-900"
+									><li class="">ROBOTS</li></a
+								>
+
+								<svg
+									class="w-4 h-4 ml-2 transition-transform group-open:rotate-180"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"
+									/>
+								</svg>
+							</summary>
+
+							<ul class="menu bg-base-100 z-[1] p-2">
+								<details
+									class="dropdown dropdown-bottom dropdown-end"
+								>
+									<summary
+										tabindex="11"
+										class="flex items-center justify-between cursor-pointer p-2 hover:text-blue-900"
+									>
+										<a
+											href="../robots/sophia.html"
+											class="hover:text-blue-900"
+											><li class="">SOPHIA</li></a
+										>
+
+										<svg
+											class="w-4 h-4 ml-2 transition-transform group-open:rotate-180"
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke="currentColor"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M19 9l-7 7-7-7"
+											/>
+										</svg>
+									</summary>
+
+									<ul class="menu bg-base-100 z-[1] p-2">
+										<a
+											href="../robots/being_sophia.html"
+											class="p-2 hover:bg-base-200 rounded-md"
+											><li>BEING SOPHIA</li></a
+										>
+										<a
+											href="#"
+											class="p-2 hover:bg-base-200 rounded-md"
+											><li>ART BY SOPHIA THE ROBOT</li></a
+										>
+										<a
+											href="#"
+											class="p-2 hover:bg-base-200 rounded-md"
+											><li>SOPHIA 2020</li></a
+										>
+									</ul>
+								</details>
+
+								<a
+									href="../robots/little_sophia.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>LITTLE SOPHIA</li></a
+								>
+								<a
+									href="../robots/index.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>ALL ROBOTS</li></a
+								>
+							</ul>
+						</details>
+
+						<details class="dropdown dropdown-bottom dropdown-end">
+							<summary
+								tabindex="10"
+								class="flex items-center justify-between cursor-pointer p-2 hover:text-blue-900"
+							>
+								<a
+									href="../hanson_ai/index.html"
+									class="hover:text-blue-900"
+									><li class="">HANSON AI</li></a
+								>
+
+								<svg
+									class="w-4 h-4 ml-2 transition-transform group-open:rotate-180"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"
+									/>
+								</svg>
+							</summary>
+
+							<ul class="menu bg-base-100 z-[1] p-2">
+								<a
+									href="../hanson_ai/humanizing_ai.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>HUMANIZING AI</li></a
+								>
+								<a
+									href="../hanson_ai/research.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>RESEARCH</li></a
+								>
+							</ul>
+						</details>
+
+						<details class="dropdown dropdown-bottom dropdown-end">
+							<summary
+								tabindex="10"
+								class="flex items-center justify-between cursor-pointer p-2 hover:text-blue-900"
+							>
+								<a
+									href="../resources/index.html"
+									class="hover:text-blue-900"
+									><li class="">RESOURCES</li></a
+								>
+
+								<svg
+									class="w-4 h-4 ml-2 transition-transform group-open:rotate-180"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"
+									/>
+								</svg>
+							</summary>
+
+							<ul class="menu bg-base-100 z-[1] p-2">
+								<a
+									href="../resources/blog.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>BLOG</li></a
+								>
+								<a
+									href="../resources/news.html"
+									class="p-2 hover:bg-base-200 rounded-md"
+									><li>NEWS</li></a
+								>
+							</ul>
+						</details>
+
+						<a
+							href="../contact_us/index.html"
+							class="hover:text-blue-900"
+							><li class="p-2">CONTACT</li></a
+						>
+						<li class="mt-4">
+							<div
+								class="flex mobile-menu dropdown-mobile-cs gap-4"
+							>
+								<a
+									href="https://www.facebook.com/hansonrobotics/"
+									><i
+										class="hover:scale-125 text-sm duration-500 fa-brands fa-facebook-f custom-icon"
+									></i
+								></a>
+								<a
+									href="https://www.linkedin.com/company/hanson-robotics/posts/?feedView=all"
+									><i
+										class="hover:scale-125 text-sm duration-500 fa-brands fa-linkedin-in custom-icon"
+									></i
+								></a>
+								<a href="https://x.com/hansonrobotics"
+									><i
+										class="hover:scale-125 text-sm duration-500 fa-brands fa-twitter custom-icon"
+									></i
+								></a>
+							</div>
+						</li>
+					</ul>
+				</details>
+				<a
+					href="https://www.facebook.com/hansonrobotics/"
+					class="hidden md:inline-block"
+					><i
+						class="hover:scale-125 duration-500 fa-brands fa-facebook-f custom-icon"
+					></i
+				></a>
+				<a
+					href="https://www.linkedin.com/company/hanson-robotics/posts/?feedView=all"
+					class="hidden md:inline-block"
+					><i
+						class="hover:scale-125 duration-500 fa-brands fa-linkedin-in custom-icon"
+					></i
+				></a>
+				<a
+					href="https://x.com/hansonrobotics"
+					class="hidden md:inline-block"
+					><i
+						class="hover:scale-125 duration-500 fa-brands fa-twitter custom-icon"
+					></i
+				></a>
+			</div>
+		</div>
+
+		<!-- join our team section -->
+		<div
+			class="flex flex-col lg:flex-row w-full px-4 lg:px-32 py-10 mt-20 bg-black"
+		>
+			<!-- Image Section -->
+			<img
+				class="w-full lg:w-1/2 p-4 lg:p-10"
+				src="../assets/IMG_0832-1024x768.jpg"
+				alt=""
+			/>
+
+			<!-- Text Section -->
+			<div
+				class="w-full lg:w-1/2 flex flex-col justify-center px-4 lg:px-20 mt-6 lg:mt-0 text-center lg:text-left"
+			>
+				<h2 class="text-white text-3xl lg:text-4xl font-bold">
+					Join our team!
+				</h2>
+				<h6 class="text-white text-lg lg:text-xl font-semibold mt-4">
+					Sophia the Robot - Brand Ambassador Program
+				</h6>
+				<p class="text-gray-300 mt-6">
+					For general job inquiries, please send your resume to:
+					<br />
+					<a
+						href="mailto:jobs@hansonrobotics.com"
+						class="text-white underline"
+					>
+						jobs@hansonrobotics.com
+					</a>
+				</p>
+			</div>
+		</div>
+
+		<!-- Footer Section -->
+		<footer
+			class="footer bg-gray-900 p-10 flex flex-col items-center gap-16"
+		>
+			<div
+				class="flex flex-col lg:flex-row w-5/6 justify-between text-base-content mx-auto text-gray-400 font-medium"
+			>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						RESOURCES
+					</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								href="./press.html"
+								>PRESS</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								href="../contact_us/faqs.html"
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>FAQS</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								href="./jobs.html"
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 text-xs"
+								>JOBS</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<nav>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">Company</h6>
+					<ul class="list-none">
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								href="./terms.html"
+								>TERMS OF USE</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								href="./policy.html"
+								>PRIVACY POLICY</a
+							>
+						</li>
+						<li class="w-56 border-b border-slate-400 mb-3">
+							<a
+								href="../resources/blog.html"
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								>BLOG</a
+							>
+						</li>
+						<li class="w-56">
+							<a
+								class="hover:decoration-none cursor-pointer block hover:text-white hover:ml-2 transition-all duration-100 mb-2 text-xs"
+								href="./sitemap.html"
+								>SITEMAP</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<form>
+					<h6 class="text-gray-50 font-bold text-xl mb-6">
+						Newsletter
+					</h6>
+					<div>
+						<div>
+							<input
+								type="text"
+								name="email"
+								placeholder="your email address"
+								class="rounded-full p-2 w-full lg:min-w-64 text-xs font-light"
+							/>
+						</div>
+						<button
+							class="bg-red-700 text-white px-6 py-2 rounded-full mt-6 border-none"
+						>
+							Subscribe
+						</button>
+					</div>
+				</form>
+			</div>
+			<p class="text-white flex text-xs">
+				<span>Copyright &copy; 2024.</span>
+				<a href="" class="text-gray-300 hover:text-white"
+					>Hanson Robotics Ltd.</a
+				>
+			</p>
+		</footer>
+
+		<!-- font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/1f51f513e9.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Script -->
+		<script src="../script.js"></script>
+	</body>
+</html>

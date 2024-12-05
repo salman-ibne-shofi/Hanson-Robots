@@ -12,7 +12,7 @@ html {
 }
 
 .header-bg {
-	background-image: url(./assets/banner.jpg);
+	background-image: url("./assets/banner.jpg");
 	background-position: center;
 }
 
@@ -27,7 +27,8 @@ html {
 }
 
 .swiper-brands-wrapper,
-.swiper-partners-wrapper {
+.swiper-partners-wrapper,
+.swiper-videos-wrapper {
 	overflow: hidden;
 	width: 1100px;
 }
@@ -37,7 +38,7 @@ html {
 }
 
 .texture-bg {
-	background-image: url("../assets/awa-bf.png");
+	background-image: url("./assets/awa-bf.png");
 }
 
 /* meet the team member section */
@@ -142,13 +143,30 @@ html {
 }
 
 .cog-map-img {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .cog-map-left {
 	background-image: url("./assets/map3.jpg");
 }
 .cog-map-right {
 	background-image: url("./assets/map1-1.jpg");
+}
+
+/* terms & conditions */
+
+.toc-content h2,
+.pp-content h2 {
+	margin-bottom: 12px;
+}
+.toc-content p,
+.pp-content p {
+	margin-bottom: 16px;
+}
+
+li div.dropdown-mobile-cs:active,
+li div.dropdown-mobile-cs:hover {
+	background-color: white !important;
+	color: #222 !important;
 }

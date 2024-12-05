@@ -15,7 +15,14 @@ const swiper = new Swiper(".swiper", {
 		clickable: true,
 	},
 
-	slidesPerView: "auto",
+	breakpoints: {
+		640: {
+			slidesPerView: 1,
+		},
+		768: {
+			slidesPerView: "auto",
+		},
+	},
 	spaceBetween: 30,
 });
 
@@ -37,8 +44,8 @@ const swiperBrands = new Swiper(".swiper-brands", {
 const swiperPartners = new Swiper(".swiper-partners", {
 	// Optional parameters
 	loop: true,
-    freeMode: true,
-    freeModeMomentum: false,
+	freeMode: true,
+	freeModeMomentum: false,
 
 	autoplay: {
 		delay: 0, // Slide 0 second
@@ -47,7 +54,36 @@ const swiperPartners = new Swiper(".swiper-partners", {
 
 	speed: 1000,
 
-
 	slidesPerView: 6,
 	spaceBetween: 30,
+});
+
+const swiperVideos = new Swiper(".swiper-videos", {
+	// Optional parameters
+	loop: true,
+	draggable: false,
+
+	speed: 5000,
+
+	// If we need pagination
+	pagination: {
+		el: ".vidswiper-pagination",
+		clickable: true,
+	},
+
+	// Navigation buttons
+	navigation: {
+		nextEl: ".vidswiper-button-next",
+		prevEl: ".vidswiper-button-prev",
+	},
+
+	breakpoints: {
+		640: {
+			slidesPerView: 2,
+		},
+		768: {
+			slidesPerView: 4,
+		},
+	},
+	spaceBetween: 16,
 });
